@@ -35,17 +35,28 @@
    .content a{
     font-size: 3vmin;
    }
-   .nav_arrows{
-    bottom: 0;
-    left: 0;
-    top: auto;
-    white-space: nowrap;
-   }
+ 
     .counter{
     font-size: 5vmin; 
    }
-
   
+   .hot_slider{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 8rem;
+   }
+   .hot_title{
+    float: none;
+    text-align: left;
+   }
+   .hot_title input[type=button]{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+   }
+
 
 }
 
@@ -137,44 +148,48 @@
 
   
 <!-- 熱銷產品 -->
-<div class="hot_slider">
+<div class="hot_w">
   <div class="hot_title">
-    <h2>熱門商品</h2>
-    <h3>HOT PRODUCT</h3>
+    <h2>熱門商品 <img src="../RWD_pic/crown_king_icon.png" alt="">
+    </h2>
+    <h3>HOT&nbsp;PRODUCT</h3>
+    <input type="button" value="探索更多" onclick="location.href='#' ">
   </div>
-  <div class="owl-carousel owl-theme">
-      <div class="item">
-          <a href="#">
-              <img src="../RWD_pic/perfume1.jpg" alt="">
-              <h4>愛戀花海</h4>
-              <p>NT$&nbsp;3200</p>
-          </a>
-      </div>
-          <div class="item">
-              <a href="#"><img src="../RWD_pic/perfume2.jpg" alt="">
-              <h4>愛戀花海</h4>
-                  <p>NT$&nbsp;3200</p></a>
-          </div>
-          <div class="item">
-              <a href="#"><img src="../RWD_pic/perfume3.jpg" alt="">
-              <h4>愛戀花海</h4>
-                  <p>NT$&nbsp;3200</p></a>
-          </div>
-          <div class="item">
-              <a href="#"><img src="../RWD_pic/perfume4.jpg" alt="">
-              <h4>愛戀花海</h4>
-                  <p>NT$&nbsp;3200</p></a>
-          </div>
-          <div class="item">
-              <a href="#"><img src="../RWD_pic/perfume5.jpg" alt="">
-              <h4>愛戀花海</h4>
-                  <p>NT$&nbsp;3200</p></a>
-          </div>
-          <div class="item">
-              <a href="#"><img src="../RWD_pic/perfume6.jpg" alt="">
-              <h4>愛戀花海</h4>
-                  <p>NT$&nbsp;3200</p></a>
-          </div>
+  <div class="hot_slider">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <a href="#">
+                <img src="../RWD_pic/perfume1.jpg" alt="">
+                <h4>愛戀花海</h4>
+                <p>NT$&nbsp;3200</p>
+            </a>
+        </div>
+            <div class="item">
+                <a href="#"><img src="../RWD_pic/perfume2.jpg" alt="">
+                <h4>愛戀花海</h4>
+                    <p>NT$&nbsp;3200</p></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="../RWD_pic/perfume3.jpg" alt="">
+                <h4>愛戀花海</h4>
+                    <p>NT$&nbsp;3200</p></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="../RWD_pic/perfume4.jpg" alt="">
+                <h4>愛戀花海</h4>
+                    <p>NT$&nbsp;3200</p></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="../RWD_pic/perfume5.jpg" alt="">
+                <h4>愛戀花海</h4>
+                    <p>NT$&nbsp;3200</p></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="../RWD_pic/perfume6.jpg" alt="">
+                <h4>愛戀花海</h4>
+                    <p>NT$&nbsp;3200</p></a>
+            </div>
+    </div>
   </div>
 </div>
 
