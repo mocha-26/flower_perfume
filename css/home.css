@@ -264,7 +264,7 @@ li.prev_slide .image {
   }
   .promise section{
     text-align: center;
-    margin: 1.5em 0 1em;
+    margin: 0.,5em 0.1em;
     font-size: 5vw;
     position: relative;
   }
@@ -307,8 +307,8 @@ li.prev_slide .image {
   }
   .service h3{
     letter-spacing: 0.1em;
-    margin-bottom: 1em;
-    font-size: 3.5vmin;
+    font-size: 0.8rem;
+    font-weight: 400;
   }
 
   /* 理念 */
@@ -364,7 +364,7 @@ li.prev_slide .image {
   /* 海洋_大圖 */
   .home_banner_pic{
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     background-image: url(../RWD_pic/logo+perfume.jpg);
     background-size: cover;
     background-position: center;
@@ -378,7 +378,7 @@ li.prev_slide .image {
     
   }
   .banner_txt h3{
-    font-size: 3vw;
+    font-size: 2rem;
     color: #3c3c3c;
     line-height: 3rem;
   }
@@ -386,7 +386,7 @@ li.prev_slide .image {
     width: 100%;
     color: #e4ddddcc;
     text-shadow: #000 0.1em 0.1em 0.2em;
-    font-size: 2vw;
+    font-size: 1rem;
     line-height: 2em;
   }
 
@@ -406,10 +406,10 @@ li.prev_slide .image {
     color: #836d6d;
   }
   .footer_product .card h3{
-    font-size: 1.5vw;
+    font-size: 1.2rem;
   }
   .footer_product .card p{
-    font-size: 1.4vw;
+    font-size: 1rem;
   }
 
   /* 兩張產品圖 */
@@ -425,12 +425,22 @@ li.prev_slide .image {
 
   .product_last h3{
     margin-bottom: 1rem;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
     color: #524343;
     text-shadow: 0.01em 0.01em 0.02em #e8e0e0;
   }
   .product_last p{
-    font-size: 1.2vw;
-    line-height: 2em;
+    font-size: 1rem;
+    line-height: 2rem;
     color: #322b2b;
+  }
+  .product_last a{
+    color: #524343;
+    font-weight: 600;
+    display: block;
+    margin: 2rem 0;
+    text-decoration: none;
+  }
+  .product_last a:hover{
+    opacity: 0.8;
   }
