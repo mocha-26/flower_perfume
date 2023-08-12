@@ -128,12 +128,13 @@
     justify-content: space-evenly;
   }
   .icon_nav img{
-    width: 100%;
+    width: 90%;
     vertical-align: top;
     padding: 5px;
   }
   .icon_nav > div{
-    width: 40px;
+    width: 2rem;
+    margin: 0 0.5rem;
   }
   
   #bag_btn{
@@ -187,7 +188,7 @@
       top: 5%;
     }
     .logo_w {
-      width: 80%;
+      width: 100%;
     }
   }
   @media screen and (min-width:993px) {
@@ -251,6 +252,7 @@
 
 .footer_main > ul > h3{
     font-size: 1.2rem;
+    font-weight: 400;
     border-bottom: 1.5px solid #ffffff;
     margin-bottom: 1rem;
 }
