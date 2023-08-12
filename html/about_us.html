@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們</title>
+    <link rel="icon" href="../RWD_pic/logo.svg">
+    <style>
+
+        @font-face {
+        font-family: 'ChenYuluoyan-Thin';
+        src: url('../css/ChenYuluoyan-Thin.woff')format("woff");
+        }
+        @font-face {
+        font-family: 'Iansui';
+        src: url('../css//Iansui-Regular.ttf')format("woff");
+        }
+
+      html{
+        font-family: 'Iansui';
+      }
+
+        .header_bg{
+            max-width: 1200px;
+            height: 90vh;
+            margin: auto;
+            background-image: url(../RWD_pic/nature_pic.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.477);
+        }
+        .header_bg .title{
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-family: 'ChenYuluoyan-Thin';
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .header_about{
+            max-width: 1200px;
+            height: 30rem;
+            margin: auto;
+            display: flex;
+            color: #605252;
+        }
+        .about_pic{
+            width: 100%;
+            height: 100%;
+            background-image: url(../RWD_pic/home_model\ 1_small.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .header_content{
+            width: 100%;
+            text-align: center;
+            padding: 2rem;
+            line-height: 2rem;
+            font-size: 1rem;
+            text-overflow: ellipsis;
+            overflow: auto;
+        }
+        .body_content{
+            max-width: 1200px;
+            margin: auto;
+
+        }
+        .pic_group{
+            position: relative;
+            text-align: right;
+        }
+        .body_content img{
+            width: 30%;
+        }
+        .body_content img:nth-of-type(1){
+            position: relative;
+            z-index: 1;
+        }
+        .body_content img:nth-of-type(2){
+            position: absolute;
+            right: 10em;
+            top: 2rem;
+
+        }
+        .body_txt{
+            color: #414143;
+            line-height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header_bg"><div class="title"><h1>我們的故事</h1><h2>OUR STORY</h2></div></div>
+    <section class="header_about">
+       <div class="about_pic"></div>
+        <div class="header_content">
+            <h1>追尋香氣的起源</h1>
+            <p>追尋不同香氣的奧祕，深入了解每種香料和元素的故事，以及它們如何在不同的組合中交織出無窮的可能性。從調配到瓶裝的設計，每一個步驟都是一場對於美麗、情感和創意的藝術之旅。
+            然而，我們要的不僅僅是創造美麗的香水，更想創造出能夠觸動人們心靈的香氣
+            希望這些香氣能夠陪伴著您的每一個重要時刻，成為您的回憶和情感的象徵。
+            這是一段關於追尋、創造和情感的旅程，希望透過我們的香水，能夠將這份美好傳遞給每一位熱愛生活的人。讓我們一起，透過香氣，創造出美麗、感動和共鳴的故事。</p>
+        </div>
+        
+    </section>
+    <section class="body_content">
+        <div class="pic_group">
+            <img src="../RWD_pic/radom_4.jpg" alt="">
+        <img src="../RWD_pic/flower_perfume.jpg" alt="">
+        </div>
+        <div class="body_txt">
+            <h1>我們堅持</h1>
+            <p>我們的堅持品質和獨特性。我們選用最優質的香料、追求完美的調配，確保每一款香水都能夠帶來持久且令人愉悅的香氣體驗。我們不追隨潮流，而是創造出屬於我們自己的獨特風格，讓您能展示獨一無二的自己，並且使用環保材質、拒絕動物實驗、使用低碳乙醇，讓您美麗的同時也能讓地球更美。
+        </p>
+        </div>
+    </section>
+</body>
+</html>
