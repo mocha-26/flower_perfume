@@ -4,9 +4,9 @@ $(document).ready(function (){
       let items = item.querySelectorAll('li'),
       current = 0,
       autoUpdate = true,
-      timeTrans = 4000,
+      timeTrans = 5000,
       timer;
-  
+
       //create nav
       let arrows_toggle = document.createElement('arrows_toggle');
       arrows_toggle.className = 'nav_arrows';

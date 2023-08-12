@@ -243,13 +243,13 @@
 }
 
 .footer_main > ul > h3{
-    font-size: 1.1rem;
+    font-size: 5vw;
     border-bottom: 1.5px solid #ffffff;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 .footer_main > ul a{
-    font-size: 1rem;
+    font-size: 4vw;
     text-decoration: none;
     color: #fff;
 }
@@ -257,7 +257,7 @@
     border-bottom: 1px solid #fff;
 }
 .footer_main li{
-    font-size: 1rem;
+    font-size: 4vw;
     text-overflow: clip;
 }
 .footer_main li img{

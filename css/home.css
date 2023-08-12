@@ -31,15 +31,16 @@
 }
 .content {
     position: relative;
-    top: 0;
+    padding: 2rem;
+    top: 10%;
     right: 0;
     width: 100%;
-    padding: 3rem;
     text-align: right;
     text-shadow: #ffffff9a 0.1em 0.1em 0.2em;
 }
 .content h2 {
-    font-size: 10vmin;
+    font-size: 5vw;
+    font-weight: 400;
     transform: translateY(-30%);
     opacity: 0;
     transition: transform .5s, opacity .5s;
@@ -48,7 +49,7 @@
     color: #000;
     text-decoration: none;
     display: inline-block;
-    font-size: 5vmin;
+    font-size: 3vw;
     opacity: 0;
     transform: translateY(-100%);
     transition: transform .5s .1s, opacity .5s .1s;
@@ -145,33 +146,28 @@ li.prev_slide .image {
 /* 熱門商品輪播 */
 .hot_w{
     max-width: 1200px;
-    padding: 0.2rem;
     margin: auto;
-    margin-top: 3em;
+    padding: 2em;
     position: relative;
 }
 
 .hot_slider{
     width: 70%;
     margin-left: auto;
-    position: relative;
+   
 }
 
 .hot_title{
-    font-size: 4vmin;
+    width: 25%;
+    font-size: 3vmin;
     float: left;
     letter-spacing: 0.1em;
-    margin: 3rem 0;
-    line-height: 3em;
+    line-height: 3rem;
     text-align: center;
+    white-space: nowrap;
 }
-.hot_title img{
-    float: left;
-    width: 10vmin;
-    vertical-align: top;
-    margin-top: 0.2em;
-}
-.hot_title input[type=button]{
+
+.hot_w input[type=button]{
     width: 10rem;
     height: 3rem;
     background-color: #000;
@@ -181,6 +177,10 @@ li.prev_slide .image {
     cursor: pointer;
     font-size: 3vmin;
     letter-spacing: 0.2rem;
+    position: absolute;
+    left: 9%;
+    bottom: 30%;
+    transform: translate(-9%,-30%);
 }
 
 .owl-carousel{
@@ -189,7 +189,7 @@ li.prev_slide .image {
 }
 
 .owl-nav .owl-next{
-   right: -4rem;
+   right: -2rem;
 }
 .owl-nav .owl-prev{
    left: -4rem;
@@ -201,7 +201,7 @@ li.prev_slide .image {
     transition: 0.5s;
 }
 .owl-nav .owl-next, .owl-nav .owl-prev{
-    position: relative;
+    position: absolute;
     bottom: 0;
     z-index: 1;
     transform: scale(1);
@@ -212,11 +212,11 @@ li.prev_slide .image {
     
 }
 .owl-nav img{
-    width: 7vmin;
+    width: 5vmin;
 }
 .item{
     margin: auto;
-    width: 80%;
+    width: 70%;
     position: relative;
 }
 .item img{
@@ -309,4 +309,121 @@ li.prev_slide .image {
     letter-spacing: 0.1em;
     margin-bottom: 1em;
     font-size: 3.5vmin;
+  }
+
+  /* 理念 */
+
+  .concept{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  .concept h2{
+    margin-bottom: 1rem;
+    font-size: 3.5vw;
+    }
+  .concept span{
+    display: block;
+    text-align: center;
+    font-size: 1.8vw;
+    margin-bottom: 1.2em;
+    letter-spacing: 0.1em;
+  }
+  .concept ul >img{
+    width: 30%;
+    vertical-align: top;
+  }
+  .concept >ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .concept >ul>li{
+    line-height: 1.5em;
+  }
+  .concept h3 img{
+    width: 1.1em;
+    vertical-align: top;
+    transform: rotate(-15deg);
+  }
+  .concept h3{
+    font-size:2vw;
+    margin-top: 1em;
+  }
+  .concept p{
+    width: 10em;
+    line-height: 1.5em;
+    margin: auto;
+    font-size:1.5vw;
+    margin-top: 0.6em;
+  }
+  .home_banner_pic{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../RWD_pic/logo+perfume.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner_txt{
+    width: 40%;
+    height: 50%;
+    padding: 1em;
+    text-align: left;
+  }
+  .banner_txt p{
+    width: 100%;
+    color: #e4ddddcc;
+    text-shadow: #000 0.1em 0.1em 0.2em;
+  }
+
+   
+  /* 最後產品 */
+  .footer_product{
+    max-width: 1200px;
+    margin: auto;
+    margin: 3em;
+  }
+  .footer_product .card img{
+    width: 50%;
+    vertical-align: top;
+  }
+  .footer_product .card h3{
+    font-size: 1.5vw;
+  }
+  .footer_product .card p{
+    font-size: 1.4vw;
+  }
+
+  /* 兩張產品圖 */
+  .product_last{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+  }
+  .product_last img{
+    width: 100%;
+  }
+  .footer_card{
+    position: relative;
+  }
+  .footer_card a{
+    text-decoration: none;
+    color: #000;
+  }
+  .product_link{
+    width: 40%;
+    line-height: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-shadow: #fff 0.1em 0.1em 0.1em;
+    transform: translate(0,-50%);
+  }
+  .product_link h3{
+    margin-bottom: 2em;
+    font-size: 2vw;
+  }
+  .product_link p{
+    font-size: 1.5vw;
   }
