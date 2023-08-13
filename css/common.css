@@ -145,15 +145,14 @@
     cursor: pointer;
   }
   .cart_area{
-    height: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 1em;
   }
   .cart_menu{
     width: 30vw;
-    min-height: 40vh;
+    min-height: 10em;
     background-color: #ffff;
     position: absolute;
     right: 0;
@@ -181,7 +180,7 @@
     padding: 0.5em 0;
     cursor: pointer;
     position: absolute;
-    bottom: 0;
+    bottom: 1em;
     left: 50%;
     transform: translate(-50%,0);
   }
