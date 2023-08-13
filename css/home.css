@@ -50,6 +50,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 5vmin;
+    margin-top: 1.5rem;
     opacity: 0;
     transform: translateY(-100%);
     transition: transform .5s .1s, opacity .5s .1s;
@@ -328,11 +329,16 @@ li.prev_slide .image {
     }
   .concept span{
     display: block;
-    text-align: center;
-    font-size: 1.3rem;
+    width: 80%;
+    margin: auto;
+    font-size: 1.1rem;
     margin-bottom: 1.2em;
     letter-spacing: 0.1em;
     color: #5a5050;
+  }
+  .concept ul >li{
+    height: 100%;
+    width: 100%;
   }
   .concept ul >li >img{
     width: 15vmin;
@@ -341,18 +347,17 @@ li.prev_slide .image {
   .concept >ul{
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   .concept >ul>li{
     width: 100%;
     line-height: 1.5em;
   }
   .concept h3{
-    font-size:3vmin;
+    font-size:16px;
     padding: 1rem;
     margin-top: 3rem;
     color: #836d6d;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
   /* 海洋_大圖 */
   .home_banner_pic{
@@ -372,38 +377,33 @@ li.prev_slide .image {
   .banner_txt h3{
     font-size: 8vmin;
     color: #3c3c3c;
+    padding-left: 0.5rem;
   }
   .banner_txt p{
     width: 100%;
-    color: #e4ddddcc;
-    text-shadow: #000 0.1em 0.1em 0.2em;
-    font-size: 3.5vmin;
-    margin-top: 2rem;
-    line-height: 2em;
+    color: #312b2bcc;
+    text-shadow: #898181 0.1em 0.1em 0.2em;
+    font-weight: 600;
+    font-size: 3.2vmin;
+    margin-top: 1.5rem;
+    line-height: 1.5em;
     padding: 1rem;
   }
-
-   
-  /* 最後產品 */
-  .footer_product{
-    max-width: 1200px;
-    margin: auto;
-    margin: 2em;
-  }
-  .footer_product .card img{
-    width: 50%;
-    vertical-align: top;
-  }
-  .footer_product .card a{
+  .banner_txt a{
     text-decoration: none;
-    color: #836d6d;
+    color: #584141;
+    font-size: 4vmin;
+    font-weight: 600;
+    padding-left: 1rem;
+    opacity: 1;
+    transition: .3s;
   }
-  .footer_product .card h3{
-    font-size: 1.4rem;
+  .banner_txt a:hover{
+    opacity: 0.8;
+    transition: .3s;
   }
-  .footer_product .card p{
-    font-size: 1.3rem;
-  }
+
+  
 
   /* 兩張產品圖 */
   .product_last{
@@ -417,24 +417,28 @@ li.prev_slide .image {
   }
 
   .product_last h3{
-    font-size: 5vmin;
+    font-size: 1.2vw;
     color: #524343;
     text-shadow: 0.01em 0.01em 0.02em #e8e0e0;
   }
   .product_last p{
-    font-size: 4vmin;
+    font-size: 0.9vw;
     padding: 0.5rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     color: #322b2b;
   }
   .product_last a{
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #524343;
     font-weight: 600;
     display: block;
     margin: 2rem 0;
     text-decoration: none;
+    opacity: 1;
+    transition: .3s;
+ 
   }
   .product_last a:hover{
     opacity: 0.8;
+    transition: .3s;
   }
