@@ -5,16 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於我們</title>
     <link rel="icon" href="../RWD_pic/logo.svg">
+    <link rel="stylesheet" href="../css/common.css">
     <style>
-
-        @font-face {
-        font-family: 'ChenYuluoyan-Thin';
-        src: url('../css/ChenYuluoyan-Thin.woff')format("woff");
-        }
-        @font-face {
-        font-family: 'Iansui';
-        src: url('../css//Iansui-Regular.ttf')format("woff");
-        }
 
       html{
         font-family: 'Iansui';
@@ -31,15 +23,18 @@
             background-blend-mode: multiply;
             background-color: rgba(0, 0, 0, 0.477);
         }
+        .header_bg h1{
+            margin-bottom: 2.5rem;
+        }
         .header_bg .title{
             width: 100%;
             height: 100%;
             color: #fff;
-            font-family: 'ChenYuluoyan-Thin';
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-size: 2rem;
         }
         .header_about{
             max-width: 1200px;
@@ -51,15 +46,23 @@
         .about_pic{
             width: 100%;
             height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
             background-image: url(../RWD_pic/home_model\ 1_small.jpg);
+        }
+        .about_pic_last{
+            width: 100%;
+            height: 100%;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+            background-image: url(../RWD_pic/radom_4.jpg);
         }
         .header_content{
             width: 100%;
             text-align: center;
-            padding: 2rem;
+            padding: 6rem 2rem;
             line-height: 2rem;
             font-size: 1rem;
             text-overflow: ellipsis;
@@ -68,32 +71,97 @@
         .body_content{
             max-width: 1200px;
             margin: auto;
-
+            text-align: center;
+            display: flex;
+            align-items: center;
         }
         .pic_group{
             position: relative;
             text-align: right;
         }
         .body_content img{
-            width: 30%;
-        }
-        .body_content img:nth-of-type(1){
-            position: relative;
-            z-index: 1;
-        }
-        .body_content img:nth-of-type(2){
-            position: absolute;
-            right: 10em;
-            top: 2rem;
+            width:25rem;
 
         }
+        
         .body_txt{
             color: #414143;
             line-height: 2rem;
+            width: 60%;
         }
+        .body_big_pic{
+            max-width: 1200px;
+            margin: auto;
+            height: 30rem;
+            background-image: url(../RWD_pic/about_us_bigpic.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-color: #0006;
+            background-blend-mode: multiply;
+            border-radius: 20rem 20rem 0 0 ;
+        }
+        .body_big_pic p{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 8rem;
+            color: #fff;
+            text-shadow: #282424 0.1em 0.1em 0.2em;
+        }
+
     </style>
 </head>
 <body>
+  <nav class="nav_main">
+    <div class="nav_menu">
+      <input type="checkbox" id="ham-menu">
+        <label for="ham-menu">
+          <div class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+    
+      <div class="sub-menu">
+        <ul>
+        <li><a href="../html/about_us.html">ABOUT US</a></li>
+        <li><a href="">CATEGORIES</a></li>
+        <li><a href="">SHOP</a></li>
+        <li><a href="../html/FAQ.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header_pic">
+      <div class="logo">
+        <div class="logo_w">
+          <a href="../html/index.html">
+            <img src="../RWD_pic/logo.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="icon_nav">
+        <div class="user_icon">
+          <a href=""><img src="../RWD_pic/user-icon.svg" alt=""></a>
+        </div>
+        <div class="cart_icon">
+          <input type="checkbox" id="bag_btn">
+          <label for="bag_btn">
+            <img src="../RWD_pic/bag-icon.svg" alt="">
+          </label>
+          <div class="cart_menu">
+            <div class="cart_title">
+              <h1>購物車</h1>
+              <h2>SHOP CART</h2>
+            </div>
+            <input type="button" value="前往結帳" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
     <div class="header_bg"><div class="title"><h1>我們的故事</h1><h2>OUR STORY</h2></div></div>
     <section class="header_about">
        <div class="about_pic"></div>
@@ -106,16 +174,41 @@
         </div>
         
     </section>
-    <section class="body_content">
-        <div class="pic_group">
-            <img src="../RWD_pic/radom_4.jpg" alt="">
-        <img src="../RWD_pic/flower_perfume.jpg" alt="">
+    <section class="header_about">
+         <div class="header_content">
+             <h1>我們堅持</h1>
+             <p>我們的堅持品質和獨特性。我們選用最優質的香料、追求完美的調配，確保每一款香水都能夠帶來持久且令人愉悅的香氣體驗。我們不追隨潮流，而是創造出屬於我們自己的獨特風格，讓您能展示獨一無二的自己，並且使用環保材質、拒絕動物實驗、使用低碳乙醇，讓您美麗的同時也能讓地球更美。</p>
+         </div>
+         <div class="about_pic_last"></div>
+     </section>
+
+
+
+    <div class="body_big_pic">
+        <p>"Fragrance is the memory of time, allowing us to relive those distant moments." - Michael Edwards</p>
+    </div>
+
+    <div class="footer">
+        <div class="footer_main">
+          <ul>
+            <h3>隱私權與條款</h3>
+            <li><a href="">隱私權政策</a></li>
+            <li><a href="">服務條款</a></li>
+          </ul>
+          <ul>
+            <h3>加入我們</h3>
+            <li><a href="">Line</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+          <ul>
+            <h3>聯絡我們</h3>
+            <li><img src="../RWD_pic/telephone_icon.png" alt="telephone"> 03-425-1108</li>
+            <li><img src="../RWD_pic/email_icon.png" alt="email">sandy87120509@gmail.com</li>
+            <li><img src="../RWD_pic/address_icon.png" alt="address">320桃園市中壢區復興路46號9樓</li>
+          </ul>
         </div>
-        <div class="body_txt">
-            <h1>我們堅持</h1>
-            <p>我們的堅持品質和獨特性。我們選用最優質的香料、追求完美的調配，確保每一款香水都能夠帶來持久且令人愉悅的香氣體驗。我們不追隨潮流，而是創造出屬於我們自己的獨特風格，讓您能展示獨一無二的自己，並且使用環保材質、拒絕動物實驗、使用低碳乙醇，讓您美麗的同時也能讓地球更美。
-        </p>
-        </div>
-    </section>
+        <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+      </div>
 </body>
 </html>

@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常見問題</title>
+    <link rel="stylesheet" href="../css/common.css">
+
+    <style>
+ 
+ .qa input{
+        display: none;
+    }
+
+   
+    .qa h1{
+        padding-bottom: 1rem;
+        margin:2rem 0;
+        color: #514949;
+    }
+    .qa ul{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .qa li{
+        width: 100%;
+        margin-bottom: 3rem;
+        border-radius: 1rem 1rem 0 0 ;
+        border-bottom: 1px solid #000;
+
+    }
+    
+    .title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+        color: #141212;
+        height: 1.8rem;
+        padding:1.2rem;
+        
+    }
+
+    .add_minus{
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+    .add_minus span{
+        width: 60%;
+        height: 2px;
+        margin: auto;
+        inset: 0;
+        position: absolute;
+        background-color: #a8a2a2;
+    }
+    .add_minus span:first-child{
+        rotate: 90deg;
+        transition: rotate 0.3s ;
+    }
+    .sub-menu_qa{
+        width: 100%;
+        display: none;
+        line-height: 1.5rem;
+        color: #000000;
+        font-size: 1.6vw;
+        padding: 1rem;
+          
+    }
+    
+   
+    .qa input:checked ~ label span{
+        rotate: 0deg;
+        transition:rotate 0.3s;
+
+    }
+
+    .qa input:checked ~ .sub-menu_qa{
+        display: block;
+        background-color: #eae7e7f1;
+        
+    }
+        .qa-txt{
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;        
+            color: #181616;
+        }
+        .qa-txt h1{
+            font-size: 2rem;
+            margin: 1.5rem 0;
+        }
+        .qa-txt h2{
+            font-size: 1.7rem;
+
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <nav class="nav_main">
+        <div class="nav_menu">
+          <input type="checkbox" id="ham-menu">
+            <label for="ham-menu">
+              <div class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </label>
+        
+          <div class="sub-menu">
+            <ul>
+            <li><a href="../html/about_us.html">ABOUT US</a></li>
+            <li><a href="">CATEGORIES</a></li>
+            <li><a href="">SHOP</a></li>
+            <li><a href="../html/FAQ.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_pic">
+          <div class="logo">
+            <div class="logo_w">
+              <a href="../html/index.html">
+                <img src="../RWD_pic/logo.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="icon_nav">
+            <div class="user_icon">
+              <a href=""><img src="../RWD_pic/user-icon.svg" alt=""></a>
+            </div>
+            <div class="cart_icon">
+              <input type="checkbox" id="bag_btn">
+              <label for="bag_btn">
+                <img src="../RWD_pic/bag-icon.svg" alt="">
+              </label>
+              <div class="cart_menu">
+                <div class="cart_title">
+                  <h1>購物車</h1>
+                  <h2>SHOP CART</h2>
+                </div>
+                <input type="button" value="前往結帳" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+     
+        <div class="qa-txt"><h1>常見問題</h1>
+            <h2>FAQ</h2>
+        </div>
+   
+    
+<div class="qa-bg">
+    <div class="bread">
+        <a href="../html/home.html">首頁</a>
+        >
+        <a href="../html/FAQ.html">常見問題</a>
+    </div>
+    <section class="qa">
+        <h1>配送相關</h1>
+        <ul>
+            <!-- 第一段 -->
+            <li>
+                <input type="checkbox" name="" id="freight">
+                <label for="freight">
+                    <div class="title">
+                        <p>運費說明</p>
+                    <div class="add_minus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                </label>
+                <ul class="sub-menu_qa">
+                    <p>除網站上所標示之特別活動說明外，運費處理原則如下：
+                        若滿足免運條件，購物袋內顯示之運費將於結帳流程扣除
+                        單筆訂單金額折扣後滿2,000元，即享免運費服務(包含外島地區)。
+                        單筆訂單金額折扣後未滿2,000元，需收運費100元(包含超商取件)。
+                        下列外島送貨地址，「送貨到府」則需另再加收運費120元，其餘未列出之外島則尚未提供運送服務。
+                        金門縣 : 金沙、金湖、金寧、金城、烈嶼(大膽島、二膽島除外)
+                        連江縣 : 南竿、北竿、莒光、東引
+                        澎湖縣 : 西嶼、湖西、馬公(虎井島、桶盤島除外)、白沙(大倉島、員貝嶼、鳥嶼、吉貝嶼除外)
+                        臺東縣 : 綠島</p>
+                </ul>
+            </li>
+            <!-- 第一段結束 -->
+    <!-- 第二段 -->
+            <li>
+                <input type="checkbox" name="" id="ship">
+                <label for="ship">
+                    <div class="title">
+                        <p>出貨說明</p>
+                    <div class="add_minus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                </label>
+                <ul class="sub-menu_qa">
+                    <p>配送方式
+                        送貨到府、超商取貨。
+                        出貨時間為正常營業日(不含法定例假日)。
+                        上午12點前之訂單可於當日出貨，12點後的訂單於下單起1個工作日後出貨。
+                        送貨到府時間僅供台灣本島地區做參考，外島配送需多加2-3個工作天。
+                        除下列外島送貨地址，其餘未列出之外島則尚未提供運送服務。
+                        金門縣 : 金沙、金湖、金寧、金城、烈嶼(大膽島、二膽島除外)
+                        連江縣 : 南竿、北竿、莒光、東引
+                        澎湖縣 : 西嶼、湖西、馬公(虎井島、桶盤島除外)、白沙(大倉島、員貝嶼、鳥嶼、吉貝嶼除外)
+                        臺東縣 : 綠島
+                        超商取貨僅限7-11、全家、萊爾富及OK之門市。
+                        商品配送到指定超商門市時，會以簡訊通知取件。
+                        外島地區到貨時間將比本島到貨時間晚1-2天。
+                        超商取貨請務必於7日內(含例假日)前往指定門市取貨，超過時間超商會將包裹做退貨處理。
+                        超商取件有材積限制，若您的訂單超出限制，將會由客服專員與您聯繫更改配送方式。</p>
+                </ul>
+            </li>
+            <!-- 第二段結束 -->
+            <!-- 第三段 -->
+            <li>
+                <input type="checkbox" name="" id="delivery">
+                <label for="delivery">
+                    <div class="title">
+                        <p>運送限制</p>
+                    <div class="add_minus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                </label>
+                <ul class="sub-menu_qa">
+                    <p>遵守「民用航空危險物品空運管理辦法」相關規定，某些產品可能無法由空運配送到外島地區。如您願意提供台灣本島的配送地址，我們會立即為您寄送訂單上的全部商品。
+                        商品「送貨到府」服務僅限台灣本島與澎湖/金門/馬祖等外島部分地區。部分外島區域不提供宅配服務，下單前請先與我們聯繫確認是否提供宅配服務。</p>
+                </ul>
+            </li>
+            <!-- 第三段結束 -->
+        </ul>
+    </section>
+<!-- 第二區 -->
+    <section class="qa">
+        <h1>退換貨及訂單相關</h1>
+        <ul>
+            <!-- 第一段 -->
+            <li>
+                <input type="checkbox" name="" id="find">
+                <label for="find">
+                    <div class="title">
+                        <p>查詢訂單進度</p>
+                    <div class="add_minus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                </label>
+                <ul class="sub-menu_qa">
+                    <p>登入您的帳戶後點選「我的訂單」，即可追蹤訂單狀態。點選「查閱」以檢視訂單狀態及送貨進度。訂單發貨後，您將於您所提供之電子郵件信箱或簡訊收到發貨通知，發貨通知會顯示訂單號碼。
+                        若在收到發貨通知後7個工作日內未收到包裹，請聯絡我們，我們將有專人為您服務。</p>
+                </ul>
+            </li>
+            <!-- 第一段結束 -->
+    <!-- 第二段 -->
+            <li>
+                <input type="checkbox" name="" id="cancel-faq">
+                <label for="cancel-faq">
+                    <div class="title">
+                        <p>取消訂單</p>
+                    <div class="add_minus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                </label>
+                <ul class="sub-menu_qa">
+                    <p>請聯繫我們，了解訂單處理進度。一旦您的訂單已出貨，我們已無法修改或取消。不便之處，敬請原諒。若您希望提出退貨申請，請聯絡我們，我們將有專人為您服務。</p>
+                </ul>
+            </li>
+            <!-- 第二段結束 -->
+            <!-- 第三段 -->
+            <li>
+                <input type="checkbox" name="" id="orderprocess">
+                <label for="orderprocess">
+                    <div class="title">
+                        <p>訂單處理流程</p>
+                    <div class="add_minus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                </label>
+                <ul class="sub-menu_qa">
+                    <p>出貨時間為正常營業日(不含法定例假日)。
+                        大部分訂單將在1-2個工作日內處理（不包括週末）。週六和週日所下訂單將在週一處理。
+                        夜間或次日訂單，在上午12點前，將在當日處理。
+                        目前僅能為收貨地址在台灣境內的線上訂單提供送貨服務。
+                        所有交易將獲得銀行授權，只有經授權的購買將被處理和送貨。</p>
+                </ul>
+            </li>
+            <!-- 第三段結束 -->
+            
+        </ul>
+    </section>
+
+    <!-- 第三區 -->
+    <section class="qa">
+        <h1>會員問題</h1>
+        <ul>
+            <!-- 第一段 -->
+            <li>
+                <input type="checkbox" name="" id="contact_faq">
+                <label for="contact_faq">
+                    <div class="title">
+                        <p>聯繫我們</p>
+                    <div class="add_minus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                </label>
+                <ul class="sub-menu_qa">
+                    誠摯邀請您使用以下方式與我們聯絡，讓我們為您提供協助。
+                   <p> 1.撥打客服電話03-251108與我們聯繫</p> 
+                   <p>2.點選網頁右下角圖示與線上客服談話</p>
+                </ul>
+            </li>
+            <!-- 第一段結束 -->
+    <!-- 第二段 -->
+            <li>
+                <input type="checkbox" name="" id="time">
+                <label for="time">
+                    <div class="title">
+                        <p>專櫃地址與營業時間</p>
+                    <div class="add_minus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                </label>
+                <ul class="sub-menu_qa">
+                    <p>請洽官網查詢或撥打客服電話。</p>
+                </ul>
+            </li>
+            <!-- 第二段結束 -->
+            <!-- 第三段 -->
+            <li>
+                <input type="checkbox" name="" id="data">
+                <label for="data">
+                    <div class="title">
+                        <p>如何修改我的會員資料</p>
+                    <div class="add_minus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                </label>
+                <ul class="sub-menu_qa">
+                    <p> 一旦會員資料建立後，即不可從後台修改帳號訊息。如欲修改聯絡資訊（如: 姓名、手機號碼等），請聯絡我們。</p>
+                </ul>
+            </li>
+            <!-- 第三段結束 -->
+            
+        </ul>
+    </section>
+
+
+    <div class="footer">
+        <div class="footer_main">
+          <ul>
+            <h3>隱私權與條款</h3>
+            <li><a href="">隱私權政策</a></li>
+            <li><a href="">服務條款</a></li>
+          </ul>
+          <ul>
+            <h3>加入我們</h3>
+            <li><a href="">Line</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+          <ul>
+            <h3>聯絡我們</h3>
+            <li><img src="../RWD_pic/telephone_icon.png" alt="telephone"> 03-425-1108</li>
+            <li><img src="../RWD_pic/email_icon.png" alt="email">sandy87120509@gmail.com</li>
+            <li><img src="../RWD_pic/address_icon.png" alt="address">320桃園市中壢區復興路46號9樓</li>
+          </ul>
+        </div>
+        <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+      </div>
+</div>
+   
+</body>
+</html>
