@@ -22,17 +22,17 @@
         .select{
             max-width: 1200px;
             margin: auto;
-            margin-top: 100px;
+            margin-top: 5rem;
             position: relative;
         }
 
         ul.drop-down-menu {
         border: #ccc 1px solid;
-        font-size: 14px;
+        font-size: 1.3vw;
         margin: auto;
         position: absolute;
         z-index: 99;
-        top: -50px;
+        top: -3rem;
         
         }
         ul.drop-down-menu input{
@@ -46,7 +46,6 @@
         ul.drop-down-menu li {
         position: relative;
         border-right: #ccc 1px solid;
-        
         }
 
 
@@ -54,9 +53,10 @@
         background-color: #fff;
         color: #333;
         display: block;
-        padding: 0 30px;
+        padding: 0 3rem;
         text-decoration: none;
         line-height: 40px;
+        text-align: center;
         }
 
         ul.drop-down-menu a:hover {
@@ -67,7 +67,7 @@
 
         ul.drop-down-menu li:hover>a {
         /* 滑鼠移入次選單上層按鈕保持變色*/
-        background-color: #e5aab1;
+        background-color: #8e555c;
         color: #fff;
         }
       
@@ -83,9 +83,8 @@
         }
        
         .content{
-            display: flex;
             max-width: 1200px;
-            height: 500px;
+            height: 100%;
             margin: auto;
             position: relative;
             border: #6A6363 1px solid;
@@ -94,88 +93,102 @@
             height: 100%;
             width: 100%;;
             margin: auto;
-            overflow: auto;
             color: #6A6363;
-        }
-        .content .txt .shop{
-            margin: 20px 0;
-            padding: 10px;
             
         }
-        .content .txt .shop h2{
-            margin: 10px 0;
+        .shop_area{
+            width: 100%;
+            height: 30em;
+            overflow:auto;
+
+        }
+        .content .txt .shop{
+            margin: 2rem 0;
+            padding: 1rem;
+        }
+        .content .txt  h2{
+            margin: 1rem 0;
         }
         .content .txt .shop p{
             line-height: 2em;
-            font-size: 14px;
+            font-size: 1.2vw;
         }
-        .content .txt p:nth-of-type(2){
-            border-bottom: #6A6363 1px solid;
-            padding-bottom: 10px;
+        .content .txt .shop span{
+            display: block;
+            border-bottom: 1px solid #6A6363;
+            padding-bottom: 1.5rem;
         }
         .map{
-            margin-left: auto;
+            margin: 1rem;
+        }
+        .shop{
+            display: flex;
+        }
+        @media screen and (max-width: 992px){
+            .shop{
+                display: block;
+            }
+            .map{
+                max-width: 100%;
+                vertical-align: top;
+            }
+            .map iframe{
+                width: 100%;
+            }
+    
         }
 
     </style>
 </head>
 <body>
-    <nav class="nav_main">
-        <div class="nav_menu">
-          <input type="checkbox" id="ham-menu">
-            <label for="ham-menu">
-              <div class="hb">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </label>
-        
-          <div class="sub-menu">
-            <ul>
-            <li><a href="../html/about_us.html">ABOUT US</a></li>
-            <li><a href="../html/Product.html">CATEGORIES</a></li>
-            <li><a href="../html/Shop.html">SHOP</a></li>
-            <li><a href="../html/FAQ.html">FAQ</a></li>
-            </ul>
+  <nav class="nav_main">
+    <div class="nav_menu">
+      <input type="checkbox" id="ham-menu">
+        <label for="ham-menu">
+          <div class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </div>
-        <div class="header_pic">
-          <div class="logo">
-            <div class="logo_w">
-              <a href="../html/index.html">
-                <img src="../RWD_pic/logo.svg" alt="logo">
-              </a>
-            </div>
-          </div>
-          <div class="icon_nav">
-            <div class="user_icon">
-              <a href=""><img src="../RWD_pic/user-icon.svg" alt="user_icon"></a>
-            </div>
-            <div class="cart_icon">
-              <input type="checkbox" id="bag_btn">
-              <label for="bag_btn">
-                <img src="../RWD_pic/bag-icon.svg" alt="shopping-bag">
-              </label>
-              <div class="cart_menu">
-                <div class="cart_title">
-                  <h1>購物車</h1>
-                  <h2>SHOP CART</h2>
-                </div>
-                <input type="button" value="前往結帳" >
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-
-    <div class="map-bg">
-        <div class="bread">
-        <a href="../html/home.html">首頁</a>
-        >
-        <a href="#">各店據點</a>
+        </label>
+    
+      <div class="sub-menu">
+        <ul>
+        <li><a href="../html/about_us.html">ABOUT US</a></li>
+        <li><a href="../html/Product.html">CATEGORIES</a></li>
+        <li><a href="../html/Shop.html">SHOP</a></li>
+        <li><a href="../html/FAQ.html">FAQ</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="header_pic">
+      <div class="logo">
+        <div class="logo_w">
+          <a href="../html/index.html">
+            <img src="../RWD_pic/logo.svg" alt="logo">
+          </a>
+        </div>
+      </div>
+      <div class="icon_nav">
+        <div class="user_icon">
+          <a href="../html/log-in.html"><img src="../RWD_pic/user-icon.svg" alt="user_icon"></a>
+        </div>
+        <div class="cart_icon">
+          <input type="checkbox" id="bag_btn">
+          <label for="bag_btn">
+            <img src="../RWD_pic/bag-icon.svg" alt="shopping-bag">
+          </label>
+          <div class="cart_menu">
+            <div class="cart_title">
+              <h1>購物車</h1>
+              <h2>SHOP CART</h2>
+            </div>
+            <input type="button" value="前往結帳" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
     <div class="chat">
         <a href="#"><img src="../index/chat-icon.png" alt=""></a>
     </div>
@@ -186,21 +199,17 @@
    <div class="select">
     <ul class="drop-down-menu">
         <li>
-                <a href="#">選取地區<span>▼</span></a>
-            
+            <a href="#">選取地區<span>▼</span></a>
             <ul>
                 
                 <li>
-                    <a href="#">台北市</a>
+                    <a href="#" data-target="shop-taipei">台北市</a>
                 </li>
                 <li>
-                    <a href="#">桃園市</a>
+                    <a href="#" data-target="shop-taoyuan">桃園市</a>
                 </li>
                 <li>
-                    <a href="#">新竹市</a>
-                </li>
-                <li>
-                    <a href="#">台中市</a>
+                    <a href="#" data-target="shop-hsinchu">新竹市</a>
                 </li>
             </ul>
         </li>
@@ -209,34 +218,96 @@
    
     <div class="content">
         <div class="txt">
-            <div class="shop shop-taoyuan">
-                <h2>中壢店-SOGO店</h2>
-                <p>營業時間:10:30-22:00</p>
-                <p>地址: 桃園市中壢區元化路357號</p>
-            </div>
+            
             <div class="shop shop-taipei">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1ggmpzNcPPOReGsoJY6P9IMkJtzIeXxI&hl=zh-TW&ehbc=2E312F" width="640" height="480"></iframe>
+                </div>
+                <div class="shop_area">
+                    <h2>遠東SOGO 台北忠孝館</h2>
+                <p>營業時間:10:30-22:00</p>
+                <span>地址: 台北市大安區忠孝東路四段45號</span>
+
+                <h2>遠東SOGO 台北復興館</h2>
+                <p>營業時間:10:30-21:30</p>
+                <span>地址: 台北市大安區忠孝東路三段300號</span>
+
+                <h2>台北101購物中心</h2>
+                <p>營業時間:10:30-21:30</p>
+                <span>地址: 台北市信義區市府路45 號</span>
+
+                <h2>新光三越 台北信義新天地A11</h2>
+                <p>營業時間:10:30-21:00</p>
+                <span>地址: 台北市信義區松壽路11號</span>
+                </div>
+            </div>
+
+            <div class="shop shop-taoyuan">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1ypDhNeMuyAvRcDwv8v7LyMpnTgBDPKw&hl=zh-TW&ehbc=2E312F" width="640" height="480"></iframe>
+                </div>
+                <div class="shop_area">
+                    <h2>中壢店-SOGO店</h2>
+                <p>營業時間:10:30-22:00</p>
+                <span>地址: 桃園市中壢區元化路357號</span>
+
                 <h2>桃園店-統領廣場百貨</h2>
                 <p>營業時間:10:30-21:30</p>
-                <p>地址: 桃園市桃園區中正路61號</p>
-            </div>
-            <div class="shop">
+                <span>地址: 桃園市桃園區中正路61號</span>
+
                 <h2>桃園二店-遠東百貨</h2>
                 <p>營業時間:10:30-21:30</p>
-                <p>地址: 桃園市桃園區中正路20號</p>
-            </div>
-            <div class="shop">
+                <span>地址: 桃園市桃園區中正路20號</span>
+
                 <h2>中壢二店-大江購物中心</h2>
                 <p>營業時間:10:30-21:00</p>
-                <p>地址: 桃園市中壢區中園路二段501號</p>
-            </div>
-            
-        </div>
-        
-        <div class="map">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1ypDhNeMuyAvRcDwv8v7LyMpnTgBDPKw&hl=zh-TW&ehbc=2E312F" width="640" height="480"></iframe></div>
-    </div>
-    </div>
+                <span>地址: 桃園市中壢區中園路二段501號</span>
+                </div>
 
+               
+            </div>
+            <div class="shop shop-hsinchu">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1DGR-DThvE4G5-AC3jsXF0Qu3gii6ZSU&hl=zh-TW&ehbc=2E312F" width="640" height="480"></iframe>
+                </div>
+                <div class="shop_area">
+                    <h2>新竹遠東百貨-新竹店</h2>
+                <p>營業時間:10:30-22:00</p>
+                <span>地址: 台灣新竹市西大路323號</span>
+
+                <h2>Big City遠東巨城購物中心-中正店</h2>
+                <p>營業時間:10:30-21:30</p>
+                <span>地址: 台灣新竹市中央路229號</span>
+                </div>
+
+               
+            </div>
+        
+        
+    </div>
+    </div>
+    <div class="footer">
+        <div class="footer_main">
+          <ul>
+            <h3>隱私權與條款</h3>
+            <li><a href="">隱私權政策</a></li>
+            <li><a href="">服務條款</a></li>
+          </ul>
+          <ul>
+            <h3>加入我們</h3>
+            <li><a href="">Line</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+          <ul>
+            <h3>聯絡我們</h3>
+            <li><img src="../RWD_pic/telephone_icon.png" alt="telephone"> 03-425-1108</li>
+            <li><img src="../RWD_pic/email_icon.png" alt="email">sandy87120509@gmail.com</li>
+            <li><img src="../RWD_pic/address_icon.png" alt="address">320桃園市中壢區復興路46號9樓</li>
+          </ul>
+        </div>
+        <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+      </div>
   
 </body>
 </html>

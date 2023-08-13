@@ -33,13 +33,13 @@
     position: relative;
     padding: 2rem;
     top: 10%;
-    right: 5rem;
+    right: 0;
     width: 100%;
     text-align: right;
     text-shadow: #ffffff9a 0.1em 0.1em 0.2em;
 }
 .content h2 {
-    font-size: 5vw;
+    font-size: 10vmin;
     font-weight: 400;
     transform: translateY(-30%);
     opacity: 0;
@@ -49,7 +49,7 @@
     color: #000;
     text-decoration: none;
     display: inline-block;
-    font-size: 3vw;
+    font-size: 5vmin;
     opacity: 0;
     transform: translateY(-100%);
     transition: transform .5s .1s, opacity .5s .1s;
@@ -91,8 +91,8 @@ li.prev_slide .image {
     position: relative;
     margin: 2em;
     display: inline-block;
-    height: 8vmin;
-    width: 8vmin;
+    height: 30px;
+    width: 30px;
     border: 0;
     cursor: pointer;
     background: transparent;
@@ -119,7 +119,7 @@ li.prev_slide .image {
     background: #000;
     height: .1em;
     min-height: 1px;
-    width: 7vmin;
+    width: 40px;
 }
 .next::before {
     right: 0;
@@ -134,7 +134,7 @@ li.prev_slide .image {
 }
 .counter {
     display: inline-block;
-    font-size: 4em;
+    font-size: 40px;
     font-family: serif;
     font-style: italic;
 }
@@ -249,13 +249,13 @@ li.prev_slide .image {
     color: #3c3c3c;
 }
 .item h4{
-    font-size: 1.8rem;
+    font-size: 3.5vmin;
     white-space: nowrap;
-    margin: 1.2em 0;
+    margin: 1em 0;
     font-weight: 400;
 }
 .item p{
-    font-size: 1.6rem;
+    font-size: 3vmin;
 }
 
 /* 承諾 */
@@ -329,13 +329,13 @@ li.prev_slide .image {
   .concept span{
     display: block;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-bottom: 1.2em;
     letter-spacing: 0.1em;
     color: #5a5050;
   }
-  .concept ul >img{
-    width: 20%;
+  .concept ul >li >img{
+    width: 15vmin;
     vertical-align: top;
   }
   .concept >ul{
@@ -347,16 +347,12 @@ li.prev_slide .image {
     width: 100%;
     line-height: 1.5em;
   }
-  .concept h3 img{
-    width: 0.6rem;
-    vertical-align: top;
-  }
   .concept h3{
-    font-size:2.2rem;
+    font-size:3vmin;
     padding: 1rem;
-    font-weight: 500;
     margin-top: 3rem;
     color: #836d6d;
+    line-height: 2rem;
   }
   /* 海洋_大圖 */
   .home_banner_pic{
@@ -368,16 +364,14 @@ li.prev_slide .image {
   }
 
   .banner_txt{
-    width: 80%;
-    height: 50%;
+    width: 100%;
     padding: 2em 1em;
     text-align: left;
     
   }
   .banner_txt h3{
-    font-size: 4rem;
+    font-size: 8vmin;
     color: #3c3c3c;
-    line-height: 3rem;
   }
   .banner_txt p{
     width: 100%;
@@ -386,6 +380,7 @@ li.prev_slide .image {
     font-size: 3.5vmin;
     margin-top: 2rem;
     line-height: 2em;
+    padding: 1rem;
   }
 
    
@@ -396,7 +391,7 @@ li.prev_slide .image {
     margin: 2em;
   }
   .footer_product .card img{
-    width: 40%;
+    width: 50%;
     vertical-align: top;
   }
   .footer_product .card a{
@@ -422,12 +417,12 @@ li.prev_slide .image {
   }
 
   .product_last h3{
-    font-size: 1.5rem;
+    font-size: 5vmin;
     color: #524343;
     text-shadow: 0.01em 0.01em 0.02em #e8e0e0;
   }
   .product_last p{
-    font-size: 1.3rem;
+    font-size: 4vmin;
     padding: 0.5rem;
     line-height: 2rem;
     color: #322b2b;

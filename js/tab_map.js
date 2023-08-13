@@ -1,10 +1,19 @@
-$(document).ready(function(){
-  var $li = $('ul.tab-title li');
-      $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
-  
-      $li.click(function(){
-          $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
-          $(this).addClass('active'). siblings ('.active').removeClass('active');
-      });
+$(document).ready(function() {
+  // Hide all content sections except the first one
+  $(".content .txt .shop").not(":first").hide();
+
+  $(".drop-down-menu a").click(function(event) {
+    event.preventDefault();
+
+    // Hide all content sections
+    $(".content .txt .shop").hide();
+
+    // Show the selected content section
+    const target = $(this).attr("data-target");
+    $(`.content .txt .${target}`).show();
+
+    // Update the button text
+    const buttonText = $(this).text();
+    $(".drop-down-menu > li > a").text(buttonText);
   });
-  
+});

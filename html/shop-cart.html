@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="icon" href="../index/logo.svg">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+
+    <style>
+       
+       
+       
+        .purchase{
+            margin: 50px 0;
+            text-align: center;
+            color: #A36D6A;
+        }
+        .purchase h2{
+            border-bottom: #5a5656 3px solid;
+            margin-top: 1rem;
+        }
+        .sort ul{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 4vmin;
+        }
+
+     
+        
+        .content{
+            max-width: 1200px;
+            margin: auto;
+            border-bottom:rgba(0, 0, 0, 0.2) 1px solid;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .content .row{
+            width: 100%;
+        }
+        .content .card-cart{
+            width: 100%;
+            display: flex;
+            color: rgba(0, 0, 0, 0.6);;
+        }
+        .content .pic{
+            width: 100%;
+            display: flex;
+           justify-content: space-between;
+            align-items: center;
+        }
+        .content .pic img{
+            width: 50%;
+            vertical-align: top;
+        }
+        .card-cart a{
+            text-decoration: none;
+        }
+        .product-name p{
+            margin: 10px;
+            font-size: 3vmin;
+            color: rgba(0, 0, 0, 0.6);
+        }
+    
+        .price{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3vmin;
+        }
+        .number-cart {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            
+        }
+        .number-cart .btn-shopcart{
+            width: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+        .number-cart input{
+            font-size: 30px;
+            color: rgba(0, 0, 0, 0.6);
+            background-color: transparent;
+            border: none;
+            cursor: pointer;  
+        }
+        .card-cart .cancel{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        .card-cart .cancel span{
+            background-color: #5a5656;
+            width: 60%;
+            height: 2px;
+            margin: auto;
+            position: absolute;
+            inset: 0;
+        }
+        .card-cart .cancel span:nth-child(1){
+            rotate: 45deg;
+        }
+        .card-cart .cancel span:nth-child(2){
+            rotate: -45deg;
+        }
+        .sum{
+            max-width: 800px;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 100px;
+            font-size: 4vmin;
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 3vmin;
+            padding: 1rem ;
+        }
+        .sum .count{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sum .discount{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #5a5656;
+            padding-bottom: 10px;
+            margin: 20px 0;
+        }
+        .sum .total{
+            display: flex;
+            justify-content: space-between;
+        }
+        .sum input{
+            width: 100%;
+            height: 3rem;
+            font-size: 4vmin;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 50px;
+            
+       }
+       .info-purchase{
+            max-width: 1200px;
+            margin: auto;
+            margin-bottom: 30px;
+            line-height: 1.5em;
+            display: flex;
+        }
+        .info-purchase .title{
+            width: 50%;
+            border: #6A6363 1px solid;
+            padding: 10px;
+        }
+        .info-purchase h3{
+            width: 70%;
+            margin: auto;
+            padding-bottom: 10px;
+            font-size: 3vmin;
+        }
+        .info-purchase p{
+            width: 70%;
+            margin: auto;
+            color: #333333;
+            font-size: 2.5vmin;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav_main">
+        <div class="nav_menu">
+          <input type="checkbox" id="ham-menu">
+            <label for="ham-menu">
+              <div class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </label>
+        
+          <div class="sub-menu">
+            <ul>
+            <li><a href="../html/about_us.html">ABOUT US</a></li>
+            <li><a href="../html/Product.html">CATEGORIES</a></li>
+            <li><a href="../html/Shop.html">SHOP</a></li>
+            <li><a href="../html/FAQ.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_pic">
+          <div class="logo">
+            <div class="logo_w">
+              <a href="../html/index.html">
+                <img src="../RWD_pic/logo.svg" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="icon_nav">
+            <div class="user_icon">
+              <a href="../html/log-in.html"><img src="../RWD_pic/user-icon.svg" alt="user_icon"></a>
+            </div>
+            <div class="cart_icon">
+              <input type="checkbox" id="bag_btn">
+              <label for="bag_btn">
+                <img src="../RWD_pic/bag-icon.svg" alt="shopping-bag">
+              </label>
+              <div class="cart_menu">
+                <div class="cart_title">
+                  <h1>購物車</h1>
+                  <h2>SHOP CART</h2>
+                </div>
+                <input type="button" value="前往結帳" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+
+    <div class="purchase-bg">
+        <div class="purchase">
+            <h1>購物車</h1>
+            <h2>CART</h2>
+        </div>
+      
+        <div class="chat">
+            <a href="#"><img src="../index/chat-icon.png" alt=""></a>
+        </div>
+        <div class="top">
+            <a href="#"><img src="../index/arrow-top.png" alt=""></a>
+        </div>
+    
+        <div class="sort">
+           <ul>
+            <li>商品</li>
+            <li>價錢</li>
+            <li>數量</li>
+           </ul>
+        </div>
+        
+        <div class="content">
+            <div class="row row-cols-3">
+                <div class="card-cart">
+                    <div class="col col-4">
+                        <a href="../html/product_content.html">
+                            <div class="pic">
+                                <img src="../RWD_pic/perfum-7 1.jpg" alt="">
+                                <div class="product-name">
+                                    <p>經典粉嫩櫻花香水</p>
+                                    <div class="ml">
+                                        <p>100ml</p>
+                                    </div>
+                                </div>
+                                </div>
+                        </a>
+                    </div>
+                    <div class="col col-4">
+                        <div class="price">
+                            <p>NT$ 4500</p>
+                        </div>
+                    </div>
+                    <div class="col col-4">
+                        <div class="number-cart">
+                                <div class="btn-shopcart">
+                                    <input type="button" value="–">
+                                    <p>1</p>
+                                    <input type="button" value="+">
+                                </div>
+                                <div class="cancel">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                       
+                    </div>  
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="content">
+            <div class="row row-cols-3">
+                <div class="card-cart">
+                    <div class="col col-4">
+                        <a href="../html/product_content.html">
+                            <div class="pic">
+                                <img src="../RWD_pic/perfume-9 1.jpg" alt="">
+                                <div class="product-name">
+                                    <p>經典森林玫瑰香水</p>
+                                    <div class="ml">
+                                        <p>100ml</p>
+                                    </div>
+                                </div>
+                                </div>
+                        </a>
+                    </div>
+                    <div class="col col-4">
+                        <div class="price">
+                            <p>NT$ 3900</p>
+                        </div>
+                    </div>
+                    <div class="col col-4">
+                        <div class="number-cart">
+                                <div class="btn-shopcart">
+                                    <input type="button" value="–">
+                                    <p>1</p>
+                                    <input type="button" value="+">
+                                </div>
+                                <div class="cancel">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                       
+                    </div>  
+                </div>
+            </div>
+        </div>
+    
+    <div class="sum">
+        <div class="count"><p>小計</p><p>NT$ 8400</p></div>
+        <div class="discount"><p>優惠</p><p>– 300</p></div>
+        <div class="total"><p>總計</p><p>NT$ 8100</p></div>
+        <input type="button" value="前往結帳" name="btn">
+    </div>
+    
+    <div class="info-purchase">
+        <div class="title"><h3>退換貨須知</h3>
+            <p>我們提供您訂購商品到貨次日起算7天猶豫期（含國定例假日）的權益，您可針對未拆封之商品（包含所有贈品）申請退貨。退貨時，請使用原包裝紙箱將欲辦理退貨之商品連同贈品包裝妥當，若原紙箱已遺失，請使用其他完整紙箱包裝，並請將原包裝內的所有商品（完整未拆封） 贈品與組合  一併裝箱，由我們指定之宅配公司至您指定之地址收回全訂單商品及贈品，您無需負擔任何運費。</p>
+        </div>
+        <div class="title"><h3>出貨須知</h3>
+            <p> 提供送貨到府、超商取貨。
+                出貨時間為正常營業日(不含法定例假日)。
+                上午12點前之訂單可於當日出貨，12點後的訂單於下單起1個工作日後出貨。</p>
+        </div>
+       
+    </div>
+    
+    <div class="footer">
+        <div class="footer_main">
+          <ul>
+            <h3>隱私權與條款</h3>
+            <li><a href="">隱私權政策</a></li>
+            <li><a href="">服務條款</a></li>
+          </ul>
+          <ul>
+            <h3>加入我們</h3>
+            <li><a href="">Line</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+          <ul>
+            <h3>聯絡我們</h3>
+            <li><img src="../RWD_pic/telephone_icon.png" alt="telephone"> 03-425-1108</li>
+            <li><img src="../RWD_pic/email_icon.png" alt="email">sandy87120509@gmail.com</li>
+            <li><img src="../RWD_pic/address_icon.png" alt="address">320桃園市中壢區復興路46號9樓</li>
+          </ul>
+        </div>
+        <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+      </div>
+
+</body>
+</html>
+

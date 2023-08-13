@@ -8,33 +8,42 @@
     <link rel="stylesheet" href="../css/common.css">
     <style>
 
-      html{
-        font-family: 'Iansui';
-      }
 
-        .header_bg{
-            max-width: 1200px;
-            height: 90vh;
-            margin: auto;
+      .header_bg{
+        max-width: 1200px;
+        margin: auto;
+        background-color: #ddcbae;
+        position: relative;
+      }
+      .about_headrt_pic{
+            max-width:60%;
+            height: 70vh;
             background-image: url(../RWD_pic/nature_pic.jpg);
-            background-position: center;
-            background-size: cover;
+            background-position: right;
+            background-size: contain;
             background-repeat: no-repeat;
-            background-blend-mode: multiply;
-            background-color: rgba(0, 0, 0, 0.477);
+            margin-left: auto;
         }
         .header_bg h1{
             margin-bottom: 2.5rem;
+            font-size: 8vmin;
+        }
+        .header_bg h2{
+          font-size: 5vmin;
         }
         .header_bg .title{
             width: 100%;
             height: 100%;
             color: #fff;
+            right: 0;
+            top: 0;
+            padding-left: 5rem;
+            position: absolute;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
             font-size: 2rem;
+            text-shadow: #282424 0.1em 0.1em 0.2em;
         }
         .header_about{
             max-width: 1200px;
@@ -67,6 +76,11 @@
             font-size: 1rem;
             text-overflow: ellipsis;
             overflow: auto;
+        }
+        .header_content p{
+          width: 50%;
+          margin: auto;
+          padding-top: 2rem;
         }
         .body_content{
             max-width: 1200px;
@@ -105,8 +119,10 @@
             width: 100%;
             height: 100%;
             text-align: center;
-            font-size: 2rem;
-            padding-top: 8rem;
+            display: flex;
+            align-items: center;
+            font-size: 5vmin;
+            padding: 2rem;
             color: #fff;
             text-shadow: #282424 0.1em 0.1em 0.2em;
         }
@@ -144,7 +160,7 @@
       </div>
       <div class="icon_nav">
         <div class="user_icon">
-          <a href=""><img src="../RWD_pic/user-icon.svg" alt="user_icon"></a>
+          <a href="../html/log-in.html"><img src="../RWD_pic/user-icon.svg" alt="user_icon"></a>
         </div>
         <div class="cart_icon">
           <input type="checkbox" id="bag_btn">
@@ -162,7 +178,14 @@
       </div>
     </div>
   </nav>
-    <div class="header_bg"><div class="title"><h1>我們的故事</h1><h2>OUR STORY</h2></div></div>
+    <div class="header_bg">
+      <div class="title">
+        <h1>我們的故事</h1>
+        <h2>OUR STORY</h2>
+      </div>
+      <div class="about_headrt_pic">
+      </div>
+    </div>
     <section class="header_about">
        <div class="about_pic"></div>
         <div class="header_content">
@@ -174,7 +197,7 @@
         </div>
         
     </section>
-    <section class="header_about">
+    <section class="header_about" style="background-color: #ddcbae;">
          <div class="header_content">
              <h1>我們堅持</h1>
              <p>我們的堅持品質和獨特性。我們選用最優質的香料、追求完美的調配，確保每一款香水都能夠帶來持久且令人愉悅的香氣體驗。我們不追隨潮流，而是創造出屬於我們自己的獨特風格，讓您能展示獨一無二的自己，並且使用環保材質、拒絕動物實驗、使用低碳乙醇，讓您美麗的同時也能讓地球更美。</p>

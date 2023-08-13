@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>經典粉嫩櫻花香水</title>
+    <link rel="icon" href="../index/logo.svg">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <style>
+     
+
+      
+        .card{
+            margin-top: 50px;
+        }
+        .card a{
+            width: 100%;
+        }
+        .card .pic{
+            width: 40vmin;
+            margin: auto;
+        }
+        .card .pic img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .card .txt{
+            width: 100%;
+            padding: 3rem;
+            text-align: center;
+            line-height: 1.5em;
+
+        }
+
+        .card .txt .box{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 3rem;
+            border-bottom: #000 1px solid;
+            padding-bottom: 20px;
+            color: rgba(55, 36, 36, 0.7);
+        }
+       .txt .box .price{
+        font-size: 4vmin;
+        }
+        .txt .box .note{
+            font-size: 2.5vmin;
+            font-weight: 600;
+        }
+        .txt .box .smell{
+            font-size: 2.5vmin;
+            font-weight: 600;
+        }
+        .content .title{
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        .content .title h3{
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 4vmin;
+        }
+        .content .ml{
+            margin-top: 1rem;
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 3vmin;
+        }
+        .content p{
+            line-height: 1.5em;
+            font-size: 2.5vmin;
+            color: rgba(0, 0, 0, 0.7);
+        }
+       .container input{
+            width: 15rem;
+            height: 3rem;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 2rem;
+            
+       }
+
+ 
+        .info{
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 60px;
+            line-height: 1.5em;
+            padding: 10px;
+        }
+        .info h3{
+            width: 70%;
+            margin: auto;
+            padding: 20px 0;
+            
+        }
+        .info p{
+            width: 70%;
+            margin: auto;
+            color: #333333;
+            font-size: 16px;
+        }
+        .wrap{
+            max-width: 1200px;
+            margin: auto;
+            font-size: 10%;
+        
+        }
+        .wrap .col-4{
+            
+            position: relative;
+        }
+        .wrap .card .content{
+            
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            height: 30vmin;
+            top: 25%;
+            line-height: 3rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem;
+            border: 1px solid #000;
+            background-color: #ddcbae;
+        }
+        .wrap .card .content h3{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            white-space: nowrap;
+            font-size: 2vw;
+        }
+        .wrap .card .content p{
+            height: 100%;
+            font-size: 1.5vw;
+            font-weight: 600;
+            line-height: 2rem;
+            overflow: auto;
+        }
+        .container-like{
+            margin: auto;
+            max-width: 1200px;
+            margin-top: 10rem;
+        }
+        .container-like .card{
+            margin: 3rem;
+        }
+        .container-like .card a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .container-like .card .wrap p{
+            width: 100%;
+            font-size: 2vmin;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        .container-like .card .icon{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .container-like .card img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .container-like .card .wrap{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .h4{
+            font-size: 4vmin;
+            /* margin-top: 2rem; */
+        }
+        @media screen and ( max-width: 992px ){
+
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav class="nav_main">
+        <div class="nav_menu">
+          <input type="checkbox" id="ham-menu">
+            <label for="ham-menu">
+              <div class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </label>
+        
+          <div class="sub-menu">
+            <ul>
+            <li><a href="../html/about_us.html">ABOUT US</a></li>
+            <li><a href="../html/Product.html">CATEGORIES</a></li>
+            <li><a href="../html/Shop.html">SHOP</a></li>
+            <li><a href="../html/FAQ.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_pic">
+          <div class="logo">
+            <div class="logo_w">
+              <a href="../html/index.html">
+                <img src="../RWD_pic/logo.svg" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="icon_nav">
+            <div class="user_icon">
+              <a href="../html/log-in.html"><img src="../RWD_pic/user-icon.svg" alt="user_icon"></a>
+            </div>
+            <div class="cart_icon">
+              <input type="checkbox" id="bag_btn">
+              <label for="bag_btn">
+                <img src="../RWD_pic/bag-icon.svg" alt="shopping-bag">
+              </label>
+              <div class="cart_menu">
+                <div class="cart_title">
+                  <h1>購物車</h1>
+                  <h2>SHOP CART</h2>
+                </div>
+                <input type="button" value="前往結帳" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+<div class="container">
+        <div class="card">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col-12 col-lg-6">
+                    <div class="pic">
+                        <img src="../RWD_pic/perfume2.jpg">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="txt">
+                        <div class="content">
+                            <div class="title">
+                                <div class="name"><h3>經典粉嫩櫻花香水</h3></div>
+                                <div class="ml">100ml</div>
+                            </div>
+                                
+                            <p>在春日的微風中，櫻花翩翩起舞，散發出迷人的芬芳。我們的櫻花香水，以這片浪漫花海為靈感，為您帶來一場絢麗的感官盛宴。</p>
+                        </div>
+                        <div class="box">
+                                <div class="price"><p>NT$ 4500</p></div>
+                                <div class="note">
+                                    <p>前調</p>
+                                    <p>中調</p>
+                                    <p>後調</p>
+                                </div>
+                                <div class="smell">
+                                    <p>佛手柑</p>
+                                    <p>櫻花</p>
+                                    <p>香水草</p>
+                                </div>
+                        </div>
+                        <input type="button" value="加入購物車" name="btn">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="info">
+    <div class="title"><h3>退換貨須知</h3>
+        <p>我們提供您訂購商品到貨次日起算7天猶豫期（含國定例假日）的權益，您可針對未拆封之商品（包含所有贈品）申請退貨。退貨時，請使用原包裝紙箱將欲辦理退貨之商品連同贈品包裝妥當，若原紙箱已遺失，請使用其他完整紙箱包裝，並請將原包裝內的所有商品（完整未拆封） 贈品與組合  一併裝箱，由我們指定之宅配公司至您指定之地址收回全訂單商品及贈品，您無需負擔任何運費。</p>
+    </div>
+   
+</div>
+
+    <div class="wrap">
+        <div class="row row-cols-3">
+            <div class="col-4">
+                <div class="card">
+                   <div class="content">
+                        <h3>精美悉心包裝</h3>
+                        <p>我們為您所選購的商品悉心包裝，以各式禮盒/禮物袋精美呈現。
+                        </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="content">
+                        <h3>試用體驗禮</h3>
+                        <p>【期間限定】訂單體驗禮升等深海精萃潔顏慕斯體驗裝。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="content">
+                        <h3>滿額免費配送服務</h3>
+                        <p>消費滿2000元享免運宅配禮遇。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container-like">
+            <div class="h4"><h4>您可能也會喜歡</h4></div>
+            <div class="row row-cols-2 row-cols-lg-2">
+                <div class="col-6 col-lg-3">
+                    <div class="card">
+                        <a href="">
+                            <img src="../RWD_pic/perfume-8 1.jpg" alt="">
+                           
+                                <div class="wrap">
+                                    <p>經典粉嫩櫻花香水</p>
+                                   
+                                </div>
+                               <div class="icon">
+                                <p>NT $4500</p>
+                                </a>
+                               </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card">
+                        <a href="">
+                            <img src="../RWD_pic/perfume-9 1.jpg" alt="">
+                           
+                                <div class="wrap">
+                                    <p>經典森林玫瑰香水</p>
+                                   
+                                </div>
+                                
+                               <div class="icon">
+                                <p>NT $3900</p>
+                                </a>
+                               </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card">
+                        <a href="">
+                            <img src="../RWD_pic/perfume6.jpg" alt="">
+                           
+                                <div class="wrap">
+                                    <p>清新海洋鼠尾草香水</p>
+                                </div>
+                                
+                               <div class="icon">
+                                <p>NT $4900</p>
+                                </a>
+                               </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card">
+                        <a href="">
+                            <img src="../RWD_pic/perfume5.jpg" alt="">
+                           
+                                <div class="wrap">
+                                    <p>晨曦花語香水</p>
+                                </div>
+                                
+                               <div class="icon">
+                                <p>NT $4200</p>
+                                </a>
+                               </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        
+
+<div class="footer">
+    <div class="footer_main">
+      <ul>
+        <h3>隱私權與條款</h3>
+        <li><a href="">隱私權政策</a></li>
+        <li><a href="">服務條款</a></li>
+      </ul>
+      <ul>
+        <h3>加入我們</h3>
+        <li><a href="">Line</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Twitter</a></li>
+      </ul>
+      <ul>
+        <h3>聯絡我們</h3>
+        <li><img src="../RWD_pic/telephone_icon.png" alt="telephone"> 03-425-1108</li>
+        <li><img src="../RWD_pic/email_icon.png" alt="email">sandy87120509@gmail.com</li>
+        <li><img src="../RWD_pic/address_icon.png" alt="address">320桃園市中壢區復興路46號9樓</li>
+      </ul>
+    </div>
+    <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+  </div>
+</body>
+</html>
