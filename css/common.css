@@ -1,16 +1,15 @@
 /* 導覽列 */
 
-  @font-face {
-    font-family: 'Iansui';
-    src: url('../css//Iansui-Regular.ttf')format("woff");
-    }
+@font-face {
+  font-family: 'Autography';
+  src: url(../css/Autography.woff) format("woff");
+}
 
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Iansui';
   }
   #ham-menu{
     display: none;

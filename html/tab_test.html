@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/grid.css">
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/tab.js"></script>
+    <style>
+      
+      .product_bg{
+        max-width:1200px;
+        margin: auto;
+        height: 80vh;
+        background-image: url(../RWD_pic/product_big_pic\ 1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        font-family: 'Autography';
+       }
+       .product_bg h1{
+        width: 100%;
+        height: 100%;
+        font-size: 5rem;
+        display: flex;
+        align-items: center;
+        padding-left: 7rem;
+       }
+        .product_tab {
+        max-width: 1200px;
+        margin: auto;
+        }
+
+        .tab-title {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        }
+
+        .tab-title li {
+        padding: 1rem 2rem;
+        }
+
+        .tab-title li a {
+        display: block;
+        padding: 1rem 2rem;
+        color: #ffffff;
+        background-color: #292828;
+        text-decoration: none;
+        font-size: 1.2rem;
+        border-radius: 2rem;
+        }
+
+        .tab-title li.active a {
+        color: #fff;
+        background-color: #AF4F4F;
+        }
+
+@font-face {
+            font-family: 'Autography';
+            src: url(../css/Autography.woff) format("woff");
+        }
+       
+       .product_bg{
+        max-width:1200px;
+        margin: auto;
+        height: 80vh;
+        background-image: url(../RWD_pic/product_big_pic\ 1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        font-family: 'Autography';
+       }
+       .product_bg h1{
+        width: 100%;
+        height: 100%;
+        font-size: 5rem;
+        display: flex;
+        align-items: center;
+        padding-left: 7rem;
+       }
+        .container{
+            margin: auto;
+        }
+        .container .card{
+            margin: 60px 30px 30px 30px;
+            
+        }
+        .container .card:hover{
+            opacity: 0.8;
+           
+            transform: scale(0.9);
+        }
+     
+        .card a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .container .card .txt{
+            margin: 10px 0 5px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .card .icon{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            padding: 0 10px;
+           
+        }
+        
+        .container .card img{
+            width: 100%;
+            vertical-align: top;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="product_bg">
+        <h1>PERFUME<br>Radiate Your Fragrance</h1>
+        <h2></h2>
+    </div>
+    <div class="product_tab">
+        <!-- tab標籤列 -->
+        <ul class="tab-title">
+          <li class="active">
+            <a href="javascript:;" data-tablink="Cologne">古龍水</a>
+          </li>
+          <li>
+            <a href="javascript:;" data-tablink="Perfume">香水</a>
+          </li>
+          <li>
+            <a href="javascript:;" data-tablink="essence">香精</a>
+          </li>
+        </ul>
+        <!-- tab內容 -->
+        <div class="tab-inner-wrap">
+          <div id="Cologne" class="tab-inner">
+            <div class="container">
+                <div class="row row-cols-4">
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="../html/product_content.html">
+                                <img src="../RWD_pic/perfume1.jpg" alt="">
+        
+                                    <div class="txt">
+                                        <p>經典粉嫩櫻花香水</p>
+                                        <p>100ml</p>
+                                    </div>
+                                   <div class="icon">
+                                    <p>NT $4500</p>
+                                    <a href="#"><img src="../index/bag_shopping_icon.svg" alt="">
+                                    </a>
+                                   </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="">
+                                <img src="../RWD_pic/perfume2.jpg" alt
+                                ="">
+                                    <div class="txt">
+                                        <p>經典森林玫瑰香水</p>
+                                        <p>100ml</p>
+                                    </div>
+                                   <div class="icon">
+                                    <p>NT $3900</p>
+                                    <a href="#"><img src="../index/bag_shopping_icon.svg" alt="">
+                                    </a>
+                                   </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="">
+                                <img src="../RWD_pic/perfume3.jpg" al
+                                t="">
+                                    <div class="txt">
+                                        <p>清新海洋鼠尾草香水</p>
+                                        <p>100ml</p>
+                                    </div>
+                                   <div class="icon">
+                                    <p>NT $4900</p>
+                                    <a href="#"><img src="../index/bag_shopping_icon.svg" alt="">
+                                    </a>
+                                   </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="">
+                                <img src="../RWD_pic/perfume4.jpg" 
+                                alt="">
+                                    <div class="txt">
+                                        <p>晨曦花語香水</p>
+                                        <p>100ml</p>
+                                    </div>
+                                   <div class="icon">
+                                    <p>NT $4200</p>
+                                    <a href="#"><img src="../index/bag_shopping_icon.svg" alt="">
+                                    </a>
+                                   </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div id="Perfume" class="tab-inner">
+            <!-- tab2的內容 -->
+             內容2
+          </div>
+          <div id="essence" class="tab-inner">
+            <!-- tab3的內容 -->
+             內容3
+          </div>
+        </div>
+      </div>
+</body>
+</html>
