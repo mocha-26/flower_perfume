@@ -345,8 +345,8 @@ li.prev_slide .image {
     vertical-align: top;
   }
   .concept >ul{
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
   }
   .concept >ul>li{
     width: 100%;
