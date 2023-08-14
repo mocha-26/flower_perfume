@@ -7,80 +7,53 @@
     <link rel="icon" href="../RWD_pic/logo.svg">
     <link rel="stylesheet" href="../css/common.css">
     <style>
-
-
-      .header_bg{
-        max-width: 1200px;
-        margin: auto;
-        background-color: #ddcbae;
-        position: relative;
+      @font-face {
+      font-family: 'Foxlite';
+      src: url(../css/Foxlite\ Script.woff) format("woff");
       }
-      .about_headrt_pic{
-            max-width:60%;
-            height: 70vh;
-            background-image: url(../RWD_pic/nature_pic.jpg);
-            background-position: right;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin-left: auto;
-        }
-        .header_bg h1{
-            margin-bottom: 2.5rem;
-            font-size: 8vmin;
-        }
-        .header_bg h2{
-          font-size: 5vmin;
-        }
-        .header_bg .title{
+      body{
+        font-family: 'Oswald','Noto Serif TC', serif;
+      }
+        .title{
             width: 100%;
-            height: 100%;
-            color: #fff;
-            right: 0;
-            top: 0;
-            padding-left: 5rem;
-            position: absolute;
+            height: 70vh;
+            color: #ffffff;
+            font-size: 4vmin;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            font-size: 2rem;
-            text-shadow: #282424 0.1em 0.1em 0.2em;
+            align-items: center;
+            background-image: url(../RWD_pic/about_us_bigpic.jpg);
+            background-size: cover;
+            background-position: center top;
+            background-color: #68686f;
+            background-blend-mode: multiply;
+            line-height: 4rem;
         }
         .header_about{
-            max-width: 1200px;
-            height: 30rem;
+            max-width: 900px;
             margin: auto;
-            display: flex;
+            margin-top: 2rem;
             color: #605252;
+            display: flex;
         }
         .about_pic{
-            width: 100%;
-            height: 100%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right;
-            background-image: url(../RWD_pic/home_model\ 1_small.jpg);
+            width: 70%;
+            margin: auto;
+            
         }
-        .about_pic_last{
-            width: 100%;
-            height: 100%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url(../RWD_pic/radom_4.jpg);
+        .about_pic img{
+          width: 100%;
         }
         .header_content{
             width: 100%;
-            text-align: center;
-            padding: 6rem 2rem;
+            padding: 2rem;
             line-height: 2rem;
             font-size: 1rem;
-            text-overflow: ellipsis;
-            overflow: auto;
+            text-align: center;
         }
         .header_content p{
-          width: 50%;
-          margin: auto;
-          padding-top: 2rem;
+          padding: 2rem;
         }
         .body_content{
             max-width: 1200px;
@@ -89,44 +62,69 @@
             display: flex;
             align-items: center;
         }
-        .pic_group{
-            position: relative;
-            text-align: right;
-        }
-        .body_content img{
-            width:25rem;
+       .header_about_cpncept{
+        max-width: 1200px;
+        height: 70vh;
+        margin: auto;
+        background-image: url(../RWD_pic/model_slider1.jpg);
+        background-size: cover;
+        background-color: #68686f;
+        background-blend-mode: multiply;
+       }
+       .concept_txt{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 2rem;
+       }
+       .concept_txt p{
+        width: 60%;
+        margin-top: 1em;
+        line-height: 1.5em;
+       }
+       /* 理念 */
 
-        }
-        
-        .body_txt{
-            color: #414143;
-            line-height: 2rem;
-            width: 60%;
-        }
-        .body_big_pic{
-            max-width: 1200px;
-            margin: auto;
-            height: 30rem;
-            background-image: url(../RWD_pic/about_us_bigpic.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            background-color: #0006;
-            background-blend-mode: multiply;
-            border-radius: 20rem 20rem 0 0 ;
-        }
-        .body_big_pic p{
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            font-size: 5vmin;
-            padding: 2rem;
-            color: #fff;
-            text-shadow: #282424 0.1em 0.1em 0.2em;
+       .concept{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .concept ul >li{
+    height: 100%;
+    width: 100%;
+  }
+  .concept ul >li >img{
+    width: 30%;
+    vertical-align: top;
+  }
+  .concept >ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .concept >ul>li{
+    width: 100%;
+    height:10%;
+  }
+  .concept h3{
+    font-size:1.2vw;
+    margin-top: 3rem;
+    color: #836d6d;
+    line-height: 1rem;
+  }
+       @media screen and (max-width:992px) {
+        .header_about{
+          display: block;
         }
 
+       }
     </style>
 </head>
 <body>
@@ -178,16 +176,12 @@
       </div>
     </div>
   </nav>
-    <div class="header_bg">
       <div class="title">
         <h1>我們的故事</h1>
         <h2>OUR STORY</h2>
       </div>
-      <div class="about_headrt_pic">
-      </div>
-    </div>
     <section class="header_about">
-       <div class="about_pic"></div>
+       <div class="about_pic"><img src="../RWD_pic/home_model 1_small.jpg" alt=""></div>
         <div class="header_content">
             <h1>追尋香氣的起源</h1>
             <p>追尋不同香氣的奧祕，深入了解每種香料和元素的故事，以及它們如何在不同的組合中交織出無窮的可能性。從調配到瓶裝的設計，每一個步驟都是一場對於美麗、情感和創意的藝術之旅。
@@ -197,21 +191,36 @@
         </div>
         
     </section>
-    <section class="header_about" style="background-color: #ddcbae;">
-         <div class="header_content">
-             <h1>我們堅持</h1>
-             <p>我們的堅持品質和獨特性。我們選用最優質的香料、追求完美的調配，確保每一款香水都能夠帶來持久且令人愉悅的香氣體驗。我們不追隨潮流，而是創造出屬於我們自己的獨特風格，讓您能展示獨一無二的自己，並且使用環保材質、拒絕動物實驗、使用低碳乙醇，讓您美麗的同時也能讓地球更美。</p>
-         </div>
-         <div class="about_pic_last"></div>
+    <section class="header_about_cpncept">
+             <div class="concept_txt">
+              <h1>我們堅持</h1>
+             <p>堅持品質和獨特性。我們選用最優質的香料、追求完美的調配，確保每一款香水都能夠帶來持久且令人愉悅的香氣體驗。我們不追隨潮流，而是創造出屬於我們自己的獨特風格，讓您能展示獨一無二的自己，並且使用環保材質、拒絕動物實驗、使用低碳乙醇，讓您美麗的同時也能讓地球更美。</p>
+             </div>
+  
      </section>
+     <section class="concept">
+      
+      <ul>
+        <li>
+          <img src="../RWD_pic/kill.png" alt="">
+          <h3>拒絕使用動物原料</h3>
+        </li>
+        <li>
+          <img src="../RWD_pic/animal-test.png" alt="">
+          <h3>拒絕動物實驗</h3>
+        </li>
+        <li>
+          <img src="../RWD_pic/carbon-dioxide.png" alt="">
+          <h3>使用低碳乙醇</h3>
+        </li>
+        <li>
+          <img src="../RWD_pic/environment_earth_icon.png" alt="">
+          <h3>採用環保材料與包裝</h3>
+        </li>
+      </ul>
+    </section>
 
-
-
-    <div class="body_big_pic">
-        <p>"Fragrance is the memory of time, allowing us to relive those distant moments." - Michael Edwards</p>
-    </div>
-
-    <div class="footer">
+      <div class="footer">
         <div class="footer_main">
           <ul>
             <h3>隱私權與條款</h3>

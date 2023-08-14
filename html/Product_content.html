@@ -69,17 +69,18 @@
             font-size: 3vmin;
         }
         .content p{
-            line-height: 1.5em;
+            line-height: 2em;
             font-size: 2.5vmin;
             color: rgba(0, 0, 0, 0.7);
         }
        .container input{
-            width: 15rem;
+            width: 100%;
             height: 3rem;
             background-color: #000;
             color: #fff;
             cursor: pointer;
             margin-top: 2rem;
+            font-size: 1.2vw;
             
        }
 
@@ -107,25 +108,12 @@
             max-width: 1200px;
             margin: auto;
             font-size: 10%;
-        
-        }
-        .wrap .col-4{
-            
-            position: relative;
         }
         .wrap .card .content{
-            
-            position: absolute;
             width: 100%;
-            height: 30vmin;
-            top: 25%;
-            line-height: 3rem;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             padding: 1rem;
-            border: 1px solid #000;
+            border-left: 1px solid #000;
             background-color: #ddcbae;
         }
         .wrap .card .content h3{
@@ -135,14 +123,12 @@
             justify-content: center;
             align-items: flex-start;
             white-space: nowrap;
-            font-size: 18px;
+            font-size: 1rem;
         }
         .wrap .card .content p{
-            height: 100%;
-            font-size: 16px;
+            font-size: 1.2vmin;
             font-weight: 600;
             line-height: 1.5rem;
-            overflow: auto;
         }
         .container-like{
             margin: auto;
@@ -150,27 +136,22 @@
             margin-top: 10rem;
         }
         .container-like .card{
-            margin: 3rem;
+            width: 60%;
+            margin: auto;
+            font-size: 3vmin;
         }
         .container-like .card a{
             text-decoration: none;
             color: rgba(0, 0, 0, 0.6);
+            
         }
         .container-like .card .wrap p{
             width: 100%;
-            font-size: 2vmin;
+            font-size: 2.5vmin;
             font-weight: 600;
-            display: flex;
-            align-items: center;
-        }
-        .container-like .card .icon{
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 16px;
-            font-weight: 700;
-            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
         }
 
         .container-like .card img{
@@ -181,13 +162,7 @@
             display: flex;
             margin-bottom: 10px;
         }
-        .h4{
-            font-size: 4vmin;
-            /* margin-top: 2rem; */
-        }
-        @media screen and ( max-width: 992px ){
-
-        }
+ 
         
     </style>
 </head>
@@ -289,8 +264,8 @@
 </div>
 
     <div class="wrap">
-        <div class="row row-cols-3">
-            <div class="col-4">
+        <div class="row row-cols-1 row-cols-lg-3">
+            <div class="col-12 col-lg-4">
                 <div class="card">
                    <div class="content">
                         <h3>精美悉心包裝</h3>
@@ -299,7 +274,7 @@
                    </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <div class="card">
                     <div class="content">
                         <h3>試用體驗禮</h3>
@@ -308,7 +283,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <div class="card">
                     <div class="content">
                         <h3>滿額免費配送服務</h3>
@@ -331,10 +306,11 @@
                                     <p>經典粉嫩櫻花香水</p>
                                    
                                 </div>
-                               <div class="icon">
-                                <p>NT $4500</p>
-                                </a>
-                               </div>
+                                <div class="wrap">
+                                    <p>NT $4500</p>
+                                   
+                                </div>
+                               
                         </a>
                     </div>
                 </div>
@@ -345,13 +321,12 @@
                            
                                 <div class="wrap">
                                     <p>經典森林玫瑰香水</p>
-                                   
+                                </div>
+                                <div class="wrap">
+                                    <p>NT $3900</p>
                                 </div>
                                 
-                               <div class="icon">
-                                <p>NT $3900</p>
-                                </a>
-                               </div>
+                               
                         </a>
                     </div>
                 </div>
@@ -363,11 +338,10 @@
                                 <div class="wrap">
                                     <p>清新海洋鼠尾草香水</p>
                                 </div>
-                                
-                               <div class="icon">
-                                <p>NT $4900</p>
-                                </a>
-                               </div>
+                                <div class="wrap">
+                                    <p>NT $4900</p>
+                                </div>
+                               
                         </a>
                     </div>
                 </div>
@@ -379,14 +353,13 @@
                                 <div class="wrap">
                                     <p>晨曦花語香水</p>
                                 </div>
-                                
-                               <div class="icon">
-                                <p>NT $4200</p>
-                                </a>
-                               </div>
-                        </a>
+                                <div class="wrap">
+                                    <p>NT $4200</p>
+                                </div>
+                               
+                            </a>
+                        </div>
                     </div>
-                </div>
             </div>
         </div>   
         
