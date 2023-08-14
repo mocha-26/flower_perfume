@@ -151,7 +151,7 @@
   }
   .cart_menu{
     width: 30vw;
-    min-height: 10em;
+   
     background-color: #ffff;
     position: absolute;
     right: 0;
@@ -174,14 +174,11 @@
   .cart_menu input[type=button]{
     background-color: #000;
     color: #fff;
-    width: 90%;
     font-size: 1vw;
-    padding: 0.5em 0;
+    padding: 0.6em  4em;
     cursor: pointer;
-    position: absolute;
-    bottom: 1em;
-    left: 50%;
-    transform: translate(-50%,0);
+    margin: 1rem 0;
+
   }
   .icon_search{
     position: relative;
