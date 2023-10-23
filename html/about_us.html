@@ -1,136 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於我們</title>
     <link rel="icon" href="../RWD_pic/logo.svg">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
       @font-face {
       font-family: 'Foxlite';
       src: url(../css/Foxlite\ Script.woff) format("woff");
       }
-      body{
-        font-family: 'Oswald','Noto Serif TC', serif;
+      @font-face {
+        font-family: 'ChenYuluoyan';
+        src: url(../css/ChenYuluoyan-Thin.woff) format("woff");
       }
+      @font-face {
+        font-family: 'JasonHandwriting5';
+        src: url(../css/JasonHandwriting5.woff) format("woff");
+      }
+
         .title{
             width: 100%;
             height: 70vh;
-            color: #ffffff;
-            font-size: 4vmin;
+            color: #2b2626;
+            font-family: 'Foxlite';
+            font-size: 6vmin;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-image: url(../RWD_pic/about_us_bigpic.jpg);
+            background-image: url(../RWD_pic/evie-s-XjX3Ju1jFfU-unsplash.jpg);
             background-size: cover;
-            background-position: center top;
-            background-color: #68686f;
-            background-blend-mode: multiply;
             line-height: 4rem;
+            position: sticky;
+            top: -1px;
         }
-        .header_about{
-            max-width: 900px;
-            margin: auto;
-            margin-top: 2rem;
-            color: #605252;
-            display: flex;
-        }
-        .about_pic{
-            width: 70%;
-            margin: auto;
-            
-        }
-        .about_pic img{
+       
+        .about_content{
           width: 100%;
+          background-color: #f9f6f2eb;
+          overflow: hidden;
+          position: relative;
+          z-index: 1;
+          font-family: 'JasonHandwriting5','Noto Serif TC', serif;
+          font-size: 1.6rem;
         }
-        .header_content{
-            width: 100%;
-            padding: 2rem;
-            line-height: 2rem;
-            font-size: 1rem;
-            text-align: center;
+    
+        .part1{
+          max-width: 900px;
+          margin: auto;
+          padding-top: 2rem;
         }
-        .header_content p{
-          padding: 2rem;
+        .part1 img{
+          width: 20%;
+          float:right;
+          vertical-align: top;
         }
-        .body_content{
-            max-width: 1200px;
-            margin: auto;
-            text-align: center;
-            display: flex;
-            align-items: center;
+        .artical{
+          width: 70%;
+          margin: auto;
+          padding-right: 4%;
+          line-height: 2rem;
         }
-       .header_about_cpncept{
-        max-width: 1200px;
-        height: 70vh;
-        margin: auto;
-        background-image: url(../RWD_pic/model_slider1.jpg);
-        background-size: cover;
-        background-color: #68686f;
-        background-blend-mode: multiply;
-       }
-       .concept_txt{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #ffffff;
-        font-size: 1rem;
-        line-height: 2rem;
-       }
-       .concept_txt p{
-        width: 60%;
-        margin-top: 1em;
-        line-height: 1.5em;
-       }
-       /* 理念 */
+        .artical p{
+          font-size: 1.2rem;
+          width: 100%;
+          margin: auto;
+          font-weight: 500;
+        }
+        .part1 .smell{
+          position: absolute;
+          left: 0;
+          top: 10rem;
+        }
+        .part1 h3{
+          margin: 2rem 0;
+          text-align: center;
+          position: relative;
+        }
+  
 
-       .concept{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 2rem 0;
-  }
-
-  .concept ul >li{
-    height: 100%;
-    width: 100%;
-  }
-  .concept ul >li >img{
-    width: 30%;
-    vertical-align: top;
-  }
-  .concept >ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .concept >ul>li{
-    width: 100%;
-    height:10%;
-  }
-  .concept h3{
-    font-size:1.2vw;
-    margin-top: 3rem;
-    color: #836d6d;
-    line-height: 1rem;
-  }
-       @media screen and (max-width:992px) {
-        .header_about{
-          display: block;
+        .part2{
+          width: 100%;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+   
+        .part2 h3{
+          margin-top: 3rem;
+        }
+        .part2 p{
+          width: 50%;
+          margin: 0 auto;
+          line-height: 2rem;
+          font-family: 'JasonHandwriting5','Noto Serif TC', serif;
+          font-size: 1.2rem;
+        }
+        .part2 img{
+          width: 50%;
+        }
+        .model{
+          width: 15%;
+          aspect-ratio: 1/0.8;
+          background-color: #ffffff;
+          position: absolute;
+          padding-top: 0.5rem;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 700;
+        }
+        .model:nth-of-type(1){
+          left: 1%;
+          top: 35%;
+        }
+        .model:nth-of-type(2){
+          top: 50%;
+          right: 1%;
+        }
+        .outer{
+          width: 90%;
+          height: 80%;
+          margin: auto;
+          margin-bottom: 0.2rem;
+          background-size: cover;
+        }
+        .nature{
+          background-image: url(../RWD_pic/nature_pic.jpg);
+          
+        }
+        .flower{
+          background-image: url(../RWD_pic/aedrian-AAyf8ThNAeA-unsplash.jpg);
         }
 
+        .last_part{
+          width: 100%;
+          display: flex;
+          margin-top: 10rem;
+        }
+        .last_part .pic{
+          width: 30%;
+          aspect-ratio: 1/1.5;
+          border-radius: 0 11rem 0 0;
+          background-image: url(../RWD_pic/radom_4.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+        .last_part .content{
+          width: 70%;
+        }
+        .last_part .content h4{
+         font-size: 2rem;
+         text-align: center;
+         margin-top: 2rem;
+         padding-right: 5rem;
+        }
+        .last_part .content ul{
+          display: flex;
+        }
+        .last_part .content li{
+          height: 100%;
+          font-size: 1.3rem;
+          font-weight: 600;
+          text-align: center;
+          color: #b0808d;
+          word-break: keep-all;
+          margin: 5rem 1rem;
+        }
+        .content li img{
+          width: 50%;
+          aspect-ratio: 1/1;
+          vertical-align: top;
+        }
+   
+
+
+       @media screen and (max-width:776px) {
+        .last_part .pic{
+          width: 50%;
+        }
+        .last_part .content{
+          width: 50%;
+        }
+        .last_part .content ul{
+          display: flex;
+          flex-direction: column;
+        }
+        .last_part .content li{
+          margin:  0;
+          padding: 1rem;
+        }
+        .model{
+          font-size: 0.6rem;
+        }
+        .model:nth-of-type(1){
+         left: 1%;
+          top: 0;
+        }
+        .model:nth-of-type(2){
+         right: 1%;
+          top: 40%;
+        }
+        
        }
     </style>
-</head>
-<body>
-  <nav class="nav_main">
-    <div class="nav_menu">
-      <input type="checkbox" id="ham-menu">
+  </head>
+  <body>
+    <nav class="nav_main">
+      <div class="nav_menu">
+        <input type="checkbox" id="ham-menu">
         <label for="ham-menu">
           <div class="hb">
             <span></span>
@@ -138,110 +222,139 @@
             <span></span>
           </div>
         </label>
-    
-      <div class="sub-menu">
-        <ul>
-        <li><a href="../html/about_us.html">ABOUT US</a></li>
-        <li><a href="../html/Product.html">CATEGORIES</a></li>
-        <li><a href="../html/Shop.html">SHOP</a></li>
-        <li><a href="../html/FAQ.html">FAQ</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="header_pic">
-      <div class="logo">
-        <div class="logo_w">
-          <a href="../html/index.html">
-            <img src="../RWD_pic/logo.svg" alt="logo">
-          </a>
+
+        <div class="sub-menu">
+          <ul>
+            <li><a href="../html/about_us.html">ABOUT US</a></li>
+            <li><a href="../html/Product.html">CATEGORIES</a></li>
+            <li><a href="../html/Shop.html">SHOP</a></li>
+            <li><a href="../html/FAQ.html">FAQ</a></li>
+          </ul>
         </div>
       </div>
-      <div class="icon_nav">
-        <div class="user_icon">
-          <a href="../html/log-in.html"><img src="../RWD_pic/user-icon.svg" alt="user_icon"></a>
+      <div class="header_pic">
+        <div class="logo">
+          <div class="logo_w">
+            <a href="../html/index.html">
+              <img src="../RWD_pic/logo.svg" alt="logo">
+            </a>
+          </div>
         </div>
-        <div class="cart_icon">
-          <input type="checkbox" id="bag_btn">
-          <label for="bag_btn">
-            <img src="../RWD_pic/bag-icon.svg" alt="shopping-bag">
-          </label>
-          <div class="cart_menu">
-            <div class="cart_title">
-              <h1>購物車</h1>
-              <h2>SHOP CART</h2>
+        <div class="icon_nav">
+          <div class="user_icon">
+            <a href="../html/log-in.html"><img src="../RWD_pic/user-icon.svg"
+                alt="user_icon"></a>
+          </div>
+          <div class="cart_icon">
+            <input type="checkbox" id="bag_btn">
+            <label for="bag_btn">
+              <img src="../RWD_pic/bag-icon.svg" alt="shopping-bag">
+            </label>
+            <div class="cart_menu">
+              <div class="cart_title">
+                <h1>購物車</h1>
+                <h2>SHOP CART</h2>
+              </div>
+              <div class="cart_area"><p>目前沒有東西</p></div>
+              <a href="../html/shop-cart.html"><input type="button" value="前往結帳"></a>
             </div>
-            <div class="cart_area"><p>目前沒有東西</p></div>
-            <a href="../html/shop-cart.html"><input type="button" value="前往結帳"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="bg">
+      <div class="title">
+        <h2>OUR STORY</h2>
+      </div>
+
+      <div class="about_content">
+
+        <div class="part1">
+
+          <h3>追尋香氣的起源</h3>
+          <img src="../RWD_pic/woman-7042516_1920.jpg" alt="" data-aos="fade-up"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+          <div class="artical">
+            <p>追尋不同香氣的奧祕，深入了解每種香料和元素的故事，以及它們如何在不同的組合中交織出無窮的可能性。從調配到瓶裝的設計，每一個步驟都是一場對於美麗、情感和創意的藝術之旅。
+              然而，我們要的不僅僅是創造美麗的香水，更想創造出能夠觸動人們心靈的香氣
+              希望這些香氣能夠陪伴著您的每一個重要時刻，成為您的回憶和情感的象徵。
+              這是一段關於追尋、創造和情感的旅程，希望透過我們的香水，能夠將這份美好傳遞給每一位熱愛生活的人。讓我們一起，透過香氣，創造出美麗、感動和共鳴的故事。</p>
+          </div>
+          <img class="smell" src="../RWD_pic/SMELL.png" alt>
+        </div>
+
+        <div class="part2">
+          <h3>我們堅持</h3>
+
+          <p>堅持品質和獨特性。我們選用最優質的香料、追求完美的調配，確保每一款香水都能夠帶來持久且令人愉悅的香氣體驗。我們不追隨潮流，而是創造出屬於我們自己的獨特風格，讓您能展示獨一無二的自己，並且使用環保材質、拒絕動物實驗、使用低碳乙醇，讓您美麗的同時也能讓地球更美。</p>
+          <div class="model"  data-aos="fade-right"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+            <div class="outer nature" >
+            </div>
+            沉浸自然
+          </div>
+          <div class="model"  data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+            <div class="outer flower">
+            </div>
+            沉醉花香
+          </div>
+        </div>
+
+        <div class="last_part">
+          <div class="pic"></div>
+          <div class="content">
+            <h4>Promise</h4>
+            <ul>
+              <li>
+                <img src="../RWD_pic/kill.png" alt>拒絕使用動物原料</li>
+              <li>
+                <img src="../RWD_pic/animal-test.png" alt>拒絕動物實驗</li>
+              <li>
+                <img src="../RWD_pic/carbon-dioxide.png" alt>使用低碳乙醇</li>
+              <li>
+                <img src="../RWD_pic/environment_earth_icon.png" alt>採用環保材料與包裝</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </nav>
-      <div class="title">
-        <h1>我們的故事</h1>
-        <h2>OUR STORY</h2>
-      </div>
-    <section class="header_about">
-       <div class="about_pic"><img src="../RWD_pic/home_model 1_small.jpg" alt=""></div>
-        <div class="header_content">
-            <h1>追尋香氣的起源</h1>
-            <p>追尋不同香氣的奧祕，深入了解每種香料和元素的故事，以及它們如何在不同的組合中交織出無窮的可能性。從調配到瓶裝的設計，每一個步驟都是一場對於美麗、情感和創意的藝術之旅。
-            然而，我們要的不僅僅是創造美麗的香水，更想創造出能夠觸動人們心靈的香氣
-            希望這些香氣能夠陪伴著您的每一個重要時刻，成為您的回憶和情感的象徵。
-            這是一段關於追尋、創造和情感的旅程，希望透過我們的香水，能夠將這份美好傳遞給每一位熱愛生活的人。讓我們一起，透過香氣，創造出美麗、感動和共鳴的故事。</p>
-        </div>
-        
-    </section>
-    <section class="header_about_cpncept">
-             <div class="concept_txt">
-              <h1>我們堅持</h1>
-             <p>堅持品質和獨特性。我們選用最優質的香料、追求完美的調配，確保每一款香水都能夠帶來持久且令人愉悅的香氣體驗。我們不追隨潮流，而是創造出屬於我們自己的獨特風格，讓您能展示獨一無二的自己，並且使用環保材質、拒絕動物實驗、使用低碳乙醇，讓您美麗的同時也能讓地球更美。</p>
-             </div>
-  
-     </section>
-     <section class="concept">
-      
-      <ul>
-        <li>
-          <img src="../RWD_pic/kill.png" alt="">
-          <h3>拒絕使用動物原料</h3>
-        </li>
-        <li>
-          <img src="../RWD_pic/animal-test.png" alt="">
-          <h3>拒絕動物實驗</h3>
-        </li>
-        <li>
-          <img src="../RWD_pic/carbon-dioxide.png" alt="">
-          <h3>使用低碳乙醇</h3>
-        </li>
-        <li>
-          <img src="../RWD_pic/environment_earth_icon.png" alt="">
-          <h3>採用環保材料與包裝</h3>
-        </li>
-      </ul>
-    </section>
 
-      <div class="footer">
-        <div class="footer_main">
-          <ul>
-            <h3>隱私權與條款</h3>
-            <li><a href="">隱私權政策</a></li>
-            <li><a href="">服務條款</a></li>
-          </ul>
-          <ul>
-            <h3>加入我們</h3>
-            <li><a href="">Line</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Twitter</a></li>
-          </ul>
-          <ul>
-            <h3>聯絡我們</h3>
-            <li><img src="../RWD_pic/telephone_icon.png" alt="telephone"> 03-425-1108</li>
-            <li><img src="../RWD_pic/email_icon.png" alt="email">sandy87120509@gmail.com</li>
-            <li><img src="../RWD_pic/address_icon.png" alt="address">320桃園市中壢區復興路46號9樓</li>
-          </ul>
+    <div class="footer">
+      <div class="footer_main">
+        <div class="icons">
+          <img src="../RWD_pic/logo.svg" alt>
+          <a href="#">
+            <i class="fa-brands fa-line" style="color: #ffffff;"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+          </a>
         </div>
-        <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+        <ul>
+          <h3>隱私權與條款</h3>
+          <li><a href="../html/privacy_terms.html">隱私權政策</a></li>
+          <li><a href="../html/privacy_terms.html">服務條款</a></li>
+        </ul>
+        <ul>
+          <h3>聯絡我們</h3>
+          <li><i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+            03-425-1108</li>
+          <li><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>sandy87120509@gmail.com</li>
+          <li><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>320桃園市中壢區復興路46號9樓</li>
+        </ul>
       </div>
-</body>
+      <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

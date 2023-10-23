@@ -5,6 +5,7 @@
   src: url(../css/Foxlite\ Script.woff) format("woff");
 }
 
+
   *{
     margin: 0;
     padding: 0;
@@ -232,52 +233,78 @@
 
 /* footer_css */
 .footer{
-    max-width: 1200px;
+    max-width: 100vw;
     margin: auto;
     text-align: center;
-    background-color: #913e3edd;
+    background-color: #88857a;
     color: #fff;
+}
+p{
+  font-size: 0.8rem;
 }
 
 .footer_main{
-    width: 100%;
+    max-width: 900px;
     margin: auto;
     display: flex;
     justify-content: space-around;
     line-height: 2em;
     text-align: left;
     margin-bottom: 2em;
-    overflow: hidden;
 }
 .footer_main > ul{
-    margin: 2rem;
+  padding: 1rem 0.5rem;
 }
 
 .footer_main > ul > h3{
-    font-size: 1.2rem;
-    font-weight: 400;
-    border-bottom: 1.5px solid #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 1.2px solid #ffffff;
     margin-bottom: 1rem;
 }
 .footer_main > ul a{
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #fff;
 }
 .footer_main > ul a:hover{
-    border-bottom: 1px solid #fff;
+    opacity: 0.8;
+    transition: all .3s;
 }
 .footer_main li{
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-overflow: clip;
+}
+.footer_main li i{
+  margin-right: 0.5rem;
 }
 .footer_main li img{
     width: 1.2rem;
     margin: 0.4em;
     vertical-align: top;
 }
+.footer .icons{
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer .icons img{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.footer .icons a{
+  width: fit-content;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 @media screen and (max-width:992px) {
     .footer_main{
         display: inline-block;
+    }
+    .footer .icons{
+      width: 40%;
+      margin: auto;
     }
 }

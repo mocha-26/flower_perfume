@@ -8,6 +8,7 @@
     <link rel="icon" href="../index/logo.svg">
     <link rel="stylesheet" href="../css/grid.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <style>
      
@@ -111,22 +112,24 @@
         }
         .wrap .card .content{
             width: 100%;
+            height: 30vh;
             text-align: center;
             padding: 1rem;
             border-left: 1px solid #000;
             background-color: #ddcbae;
         }
         .wrap .card .content h3{
-            height: 100%;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             white-space: nowrap;
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
         .wrap .card .content p{
-            font-size: 1.2vmin;
+            width: 70%;
+            margin: 1rem auto;
+            font-size: 0.8rem;
             font-weight: 600;
             line-height: 1.5rem;
         }
@@ -257,12 +260,7 @@
     </div>
 </div>
 
-<div class="info">
-    <div class="title"><h3>退換貨須知</h3>
-        <p>我們提供您訂購商品到貨次日起算7天猶豫期（含國定例假日）的權益，您可針對未拆封之商品（包含所有贈品）申請退貨。退貨時，請使用原包裝紙箱將欲辦理退貨之商品連同贈品包裝妥當，若原紙箱已遺失，請使用其他完整紙箱包裝，並請將原包裝內的所有商品（完整未拆封） 贈品與組合  一併裝箱，由我們指定之宅配公司至您指定之地址收回全訂單商品及贈品，您無需負擔任何運費。</p>
-    </div>
-   
-</div>
+
 
     <div class="wrap">
         <div class="row row-cols-1 row-cols-lg-3">
@@ -294,6 +292,13 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="info">
+        <div class="title"><h3>退換貨須知</h3>
+            <p>我們提供您訂購商品到貨次日起算7天猶豫期（含國定例假日）的權益，您可針對未拆封之商品（包含所有贈品）申請退貨。退貨時，請使用原包裝紙箱將欲辦理退貨之商品連同贈品包裝妥當，若原紙箱已遺失，請使用其他完整紙箱包裝，並請將原包裝內的所有商品（完整未拆封） 贈品與組合  一併裝箱，由我們指定之宅配公司至您指定之地址收回全訂單商品及贈品，您無需負擔任何運費。</p>
+        </div>
+       
     </div>
         <div class="container-like">
             <div class="h4"><h4>您可能也會喜歡</h4></div>
@@ -365,27 +370,33 @@
         </div>   
         
 
-<div class="footer">
-    <div class="footer_main">
-      <ul>
-        <h3>隱私權與條款</h3>
-        <li><a href="">隱私權政策</a></li>
-        <li><a href="">服務條款</a></li>
-      </ul>
-      <ul>
-        <h3>加入我們</h3>
-        <li><a href="">Line</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Twitter</a></li>
-      </ul>
-      <ul>
-        <h3>聯絡我們</h3>
-        <li><img src="../RWD_pic/telephone_icon.png" alt="telephone"> 03-425-1108</li>
-        <li><img src="../RWD_pic/email_icon.png" alt="email">sandy87120509@gmail.com</li>
-        <li><img src="../RWD_pic/address_icon.png" alt="address">320桃園市中壢區復興路46號9樓</li>
-      </ul>
-    </div>
-    <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
-  </div>
+        <div class="footer">
+            <div class="footer_main">
+              <div class="icons">
+                <img src="../RWD_pic/logo.svg" alt="">
+                <a href="#">
+                  <i class="fa-brands fa-line" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                </a>
+              </div>
+              <ul>
+                <h3>隱私權與條款</h3>
+                <li><a href="../html/privacy_terms.html">隱私權政策</a></li>
+                <li><a href="../html/privacy_terms.html">服務條款</a></li>
+              </ul>
+              <ul>
+                <h3>聯絡我們</h3>
+                <li><i class="fa-solid fa-phone" style="color: #ffffff;"></i> 03-425-1108</li>
+                <li><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>sandy87120509@gmail.com</li>
+                <li><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>320桃園市中壢區復興路46號9樓</li>
+              </ul>
+            </div>
+            <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+          </div>
 </body>
 </html>
