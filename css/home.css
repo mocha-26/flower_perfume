@@ -185,6 +185,9 @@ li.prev_slide .image {
   width: 30%;
   vertical-align: top;
   margin-right: auto;
+  position: sticky;
+  z-index: 1;
+  left: 0;
 }
 
 .hot_title {
