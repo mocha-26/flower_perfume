@@ -15,10 +15,7 @@
       font-family: 'Foxlite';
       src: url(../css/Foxlite\ Script.woff) format("woff");
       }
-      @font-face {
-        font-family: 'ChenYuluoyan';
-        src: url(../css/ChenYuluoyan-Thin.woff) format("woff");
-      }
+
       @font-face {
         font-family: 'JasonHandwriting5';
         src: url(../css/JasonHandwriting5.woff) format("woff");
@@ -28,7 +25,6 @@
             width: 100%;
             height: 70vh;
             color: #2b2626;
-            font-family: 'Foxlite';
             font-size: 6vmin;
             display: flex;
             flex-direction: column;
@@ -40,6 +36,12 @@
             position: sticky;
             top: -1px;
         }
+        .title h2{
+          font-family: 'Foxlite';
+        }
+        .bg h3{
+          font-family: 'JasonHandwriting5','Noto Serif TC', serif;
+        }
        
         .about_content{
           width: 100%;
@@ -47,7 +49,6 @@
           overflow: hidden;
           position: relative;
           z-index: 1;
-          font-family: 'JasonHandwriting5','Noto Serif TC', serif;
           font-size: 1.6rem;
         }
     
@@ -69,6 +70,7 @@
         }
         .artical p{
           font-size: 1.2rem;
+          font-family: 'JasonHandwriting5','Noto Serif TC', serif;
           width: 100%;
           margin: auto;
           font-weight: 500;
@@ -163,10 +165,11 @@
         }
         .last_part .content ul{
           display: flex;
+          justify-content: center;
         }
         .last_part .content li{
           height: 100%;
-          font-size: 1.3rem;
+          font-size: 1rem;
           font-weight: 600;
           text-align: center;
           color: #b0808d;
@@ -174,8 +177,9 @@
           margin: 5rem 1rem;
         }
         .content li img{
-          width: 50%;
-          aspect-ratio: 1/1;
+          width: 60%;
+          margin: auto;
+          height: 5rem;
           vertical-align: top;
         }
    
@@ -191,10 +195,12 @@
         .last_part .content ul{
           display: flex;
           flex-direction: column;
+          align-items: center;
         }
         .last_part .content li{
           margin:  0;
           padding: 1rem;
+          font-size: 0.8rem;
         }
         .model{
           font-size: 0.6rem;
@@ -310,13 +316,13 @@
             <h4>Promise</h4>
             <ul>
               <li>
-                <img src="../RWD_pic/kill.png" alt>拒絕使用動物原料</li>
+                <img src="../RWD_pic/kill.png" alt=""><br>拒絕使用動物原料</li>
               <li>
-                <img src="../RWD_pic/animal-test.png" alt>拒絕動物實驗</li>
+                <img src="../RWD_pic/animal-test.png" alt=""><br>拒絕動物實驗</li>
               <li>
-                <img src="../RWD_pic/carbon-dioxide.png" alt>使用低碳乙醇</li>
+                <img src="../RWD_pic/carbon-dioxide.png" alt=""><br>使用低碳乙醇</li>
               <li>
-                <img src="../RWD_pic/environment_earth_icon.png" alt>採用環保材料與包裝</li>
+                <img src="../RWD_pic/environment_earth_icon.png" alt=""><br>採用環保材料與包裝</li>
             </ul>
           </div>
         </div>

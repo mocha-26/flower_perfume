@@ -171,7 +171,7 @@ li.prev_slide .image {
 .hot_w {
   max-width: 1200px;
   position: relative;
-  margin-bottom: 8rem;
+  margin:0 auto 8rem;
 }
 
 .hot_slider {
@@ -206,7 +206,7 @@ li.prev_slide .image {
   border: 0;
   border-radius: 2px;
   cursor: pointer;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   letter-spacing: 0.2rem;
   position: relative;
   left: 50%;
@@ -312,8 +312,8 @@ li.prev_slide .image {
 }
 
 .promise {
-  width: 9rem;
-  height: 9rem;
+  width: 15%;
+  aspect-ratio: 1/1;
   border: 3px solid #eacd76;
   border-radius: 50%;
   padding: 1rem;
@@ -322,9 +322,9 @@ li.prev_slide .image {
 }
 
 .promise p {
-  width: 100px;
+  width: 80%;
   position: absolute;
-  font-size: 1.2rem;
+  font-size: 4vmin;
   font-weight: 600;
   top: 0.5rem;
   left: -5rem;
@@ -334,14 +334,14 @@ li.prev_slide .image {
 
 .promise span {
   padding-left: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 3vmin;
   position: relative;
   display: block;
   font-weight: 600;
   color: #eee;
-  top: 40%;
+  top: 45%;
   left: 40%;
-  transform: translate(-40%, -40%);
+  transform: translate(-40%, -45%);
 }
 .last_part >img{
   width: 50%;

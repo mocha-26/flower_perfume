@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: 'Times New Roman', Times,'Noto Serif';
   }
   #ham-menu{
     display: none;
@@ -239,7 +240,7 @@
     background-color: #88857a;
     color: #fff;
 }
-p{
+.footer p{
   font-size: 0.8rem;
 }
 
