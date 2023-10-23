@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/grid.css">
-    <link rel="stylesheet" href="../css/common.css">
-    <script src="../js/jquery-3.7.0.js"></script>
-    <script src="../js/tab.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/grid.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <script src="../js/jquery-3.7.0.js"></script>
+        <script src="../js/tab.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+        @font-face {
+  font-family: 'Foxlite';
+  src: url(../css/Foxlite\ Script.woff) format("woff");
+}
       
       .product_bg{
         max-width:100%;
@@ -19,7 +24,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
-        font-family: 'Foxlite';
        }
        .product_big_txt{
         width: 100%;
@@ -32,9 +36,11 @@
        .product_bg h1{
         width: 50%;
         font-size: 8vw;
+        font-family: 'Foxlite';
        }
        .product_bg h2{
         font-size: 4vw;
+        font-family: 'Foxlite';
        }
         .product_tab {
         max-width: 1200px;
@@ -152,481 +158,490 @@
 
 
     </style>
-</head>
-<body>
-    <nav class="nav_main">
-        <div class="nav_menu">
-          <input type="checkbox" id="ham-menu">
-            <label for="ham-menu">
-              <div class="hb">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </label>
-        
-          <div class="sub-menu">
-            <ul>
-            <li><a href="../html/about_us.html">ABOUT US</a></li>
-            <li><a href="../html/Product.html">CATEGORIES</a></li>
-            <li><a href="../html/Shop.html">SHOP</a></li>
-            <li><a href="../html/FAQ.html">FAQ</a></li>
+    </head>
+    <body>
+        <nav class="nav_main">
+            <div class="nav_menu">
+                <input type="checkbox" id="ham-menu">
+                <label for="ham-menu">
+                    <div class="hb">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="../html/about_us.html">ABOUT US</a></li>
+                        <li><a href="../html/Product.html">CATEGORIES</a></li>
+                        <li><a href="../html/Shop.html">SHOP</a></li>
+                        <li><a href="../html/FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_pic">
+                <div class="logo">
+                    <div class="logo_w">
+                        <a href="../html/index.html">
+                            <img src="../RWD_pic/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="icon_nav">
+                    <div class="user_icon">
+                        <a href="../html/log-in.html"><img
+                                src="../RWD_pic/user-icon.svg" alt="user_icon"></a>
+                    </div>
+                    <div class="cart_icon">
+                        <input type="checkbox" id="bag_btn">
+                        <label for="bag_btn">
+                            <img src="../RWD_pic/bag-icon.svg"
+                                alt="shopping-bag">
+                        </label>
+                        <div class="cart_menu">
+                            <div class="cart_title">
+                                <h1>購物車</h1>
+                                <h2>SHOP CART</h2>
+                            </div>
+                            <div class="cart_area"><p>目前沒有東西</p></div>
+                            <a href="../html/shop-cart.html"><input
+                                    type="button" value="前往結帳"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="product_tab">
+            <div class="product_bg">
+                <div class="product_big_txt">
+                    <h1>Perfume</h1>
+                    <h2>Timeless Elegance, <br>Captured in Every Drop</h2>
+                </div>
+            </div>
+            <!-- tab標籤列 -->
+            <ul class="tab-title">
+                <li class="active">
+                    <a href="javascript:;" data-tablink="Cologne">古龍水</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-tablink="Perfume">香水</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-tablink="essence">香精</a>
+                </li>
             </ul>
-          </div>
-        </div>
-        <div class="header_pic">
-          <div class="logo">
-            <div class="logo_w">
-              <a href="../html/index.html">
-                <img src="../RWD_pic/logo.svg" alt="logo">
-              </a>
-            </div>
-          </div>
-          <div class="icon_nav">
-            <div class="user_icon">
-              <a href="../html/log-in.html"><img src="../RWD_pic/user-icon.svg" alt="user_icon"></a>
-            </div>
-            <div class="cart_icon">
-              <input type="checkbox" id="bag_btn">
-              <label for="bag_btn">
-                <img src="../RWD_pic/bag-icon.svg" alt="shopping-bag">
-              </label>
-              <div class="cart_menu">
-                <div class="cart_title">
-                  <h1>購物車</h1>
-                  <h2>SHOP CART</h2>
-                </div>
-                <div class="cart_area"><p>目前沒有東西</p></div>
-                <a href="../html/shop-cart.html"><input type="button" value="前往結帳"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    <div class="product_tab">
-        <div class="product_bg">
-           <div class="product_big_txt">
-            <h1>Perfume</h1>
-            <h2>Timeless Elegance, <br>Captured in Every Drop</h2>
-           </div>
-        </div>
-        <!-- tab標籤列 -->
-        <ul class="tab-title">
-          <li class="active">
-            <a href="javascript:;" data-tablink="Cologne">古龍水</a>
-          </li>
-          <li>
-            <a href="javascript:;" data-tablink="Perfume">香水</a>
-          </li>
-          <li>
-            <a href="javascript:;" data-tablink="essence">香精</a>
-          </li>
-        </ul>
-        <!-- tab內容 -->
-        <div class="tab-inner-wrap">
-          <div id="Cologne" class="tab-inner">
-            <div class="container">
-                <div class="row row-cols-2 row-cols-lg-2">
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="../html/Product_content.html">
-                                <img src="../RWD_pic/perfume1.jpg" alt="">
-        
-                                    <div class="txt">
-                                        <p>經典粉嫩櫻花香水</p>
-                                        <p>NT $4500</p>
-                                    </div> 
-                                    <a href="">
-                                    <div class="product_link">
-                                       加到購物車
-                                    </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume2.jpg" alt
-                                ="">
-                                    <div class="txt">
-                                        <p>經典森林玫瑰香水</p>
-                                        <p>NT $3900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume3.jpg" al
-                                t="">
-                                    <div class="txt">
-                                        <p>清新鼠尾草香水</p>
-                                        <p>NT $4900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                        </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume4.jpg" 
-                                alt="">
-                                    <div class="txt">
-                                        <p>晨曦花語香水</p>
-                                        <p>NT $4200</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                        </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume1.jpg" alt="">
-        
-                                    <div class="txt">
-                                        <p>經典粉嫩櫻花香水</p>
-                                        <p>NT $4500</p>
-                                    </div> 
-                                    <a href="">
-                                    <div class="product_link">
-                                       加到購物車
-                                    </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume2.jpg" alt
-                                ="">
-                                    <div class="txt">
-                                        <p>經典森林玫瑰香水</p>
-                                        <p>NT $3900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume3.jpg" al
-                                t="">
-                                    <div class="txt">
-                                        <p>清新鼠尾草香水</p>
-                                        <p>NT $4900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                        </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume4.jpg" 
-                                alt="">
-                                    <div class="txt">
-                                        <p>晨曦花語香水</p>
-                                        <p>NT $4200</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                        </a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div id="Perfume" class="tab-inner">
-            <!-- tab2的內容 -->
-            <div class="container">
-                <div class="row row-cols-4">
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume5.jpg" alt="">
-        
-                                    <div class="txt">
-                                        <p>經典粉嫩櫻花香水</p>
-                                        <p>NT $4500</p>
-                                    </div> 
-                                    <a href="">
-                                    <div class="product_link">
-                                       加到購物車
-                                    </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume6.jpg" alt
-                                ="">
-                                    <div class="txt">
-                                        <p>經典森林玫瑰香水</p>
-                                        <p>NT $3900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/ocean-1-small.jpg" al
-                                t="">
-                                    <div class="txt">
-                                        <p>清新鼠尾草香水</p>
-                                        <p>NT $4900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                        </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/ocean-1 1.jpg" 
-                                alt="">
-                                    <div class="txt">
-                                        <p>晨曦花語香水</p>
-                                        <p>NT $4200</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                        </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume5.jpg" alt="">
-        
-                                    <div class="txt">
-                                        <p>經典粉嫩櫻花香水</p>
-                                        <p>NT $4500</p>
-                                    </div> 
-                                    <a href="">
-                                    <div class="product_link">
-                                       加到購物車
-                                    </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume6.jpg" alt
-                                ="">
-                                    <div class="txt">
-                                        <p>經典森林玫瑰香水</p>
-                                        <p>NT $3900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/ocean-1-small.jpg" al
-                                t="">
-                                    <div class="txt">
-                                        <p>清新鼠尾草香水</p>
-                                        <p>NT $4900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                        </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/ocean-1 1.jpg" 
-                                alt="">
-                                    <div class="txt">
-                                        <p>晨曦花語香水</p>
-                                        <p>NT $4200</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                        </a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div id="essence" class="tab-inner">
-            <!-- tab3的內容 -->
-            <div class="container">
-                <div class="row row-cols-4">
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfum-7 1.jpg" alt="">
-        
-                                    <div class="txt">
-                                        <p>經典粉嫩櫻花香水</p>
-                                        <p>NT $4500</p>
-                                    </div> 
-                                    <a href="">
-                                    <div class="product_link">
-                                       加到購物車
-                                    </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume-8 1.jpg" alt
-                                ="">
-                                    <div class="txt">
-                                        <p>經典森林玫瑰香水</p>
-                                        <p>NT $3900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume-9 1.jpg" al
-                                t="">
-                                    <div class="txt">
-                                        <p>清新鼠尾草香水</p>
-                                        <p>NT $4900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <a href="">
-                                <img src="../RWD_pic/perfume-11.jpg" al
-                                t="">
-                                    <div class="txt">
-                                        <p>清新鼠尾草香水</p>
-                                        <p>NT $4900</p>
-                                    </div>
-                                    <a href="">
-                                        <div class="product_link">
-                                           加到購物車
-                                        </div>
-                                    </a>
-                            </a>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
-            <!-- 第三結束 -->
-          </div>
-        </div>
-      </div>
+            <!-- tab內容 -->
+            <div class="tab-inner-wrap">
+                <div id="Cologne" class="tab-inner">
+                    <div class="container">
+                        <div class="row row-cols-2 row-cols-lg-2">
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href="../html/Product_content.html">
+                                        <img src="../RWD_pic/perfume1.jpg" alt>
 
-      <div class="product_last">
-        <div class="row row-cols-1 ">
-         <div class="col-12 col-lg-6"><img src="../RWD_pic/orgperfume.jpg" alt=""></div>
-         <div class="col-12 col-lg-6"><h3>古典雅緻香水</h3><p>優雅的花香與清新柑橘的相遇，彷彿身處於古典宮廷的優雅氛圍中</p><a href="">選購去></a></div>
-        </div>
-        <div class="row row-cols-1">
-         <div class="col-12 col-lg-6"><img src="../RWD_pic/footer-product.jpg" alt=""></div>
-         <div class="col-12 col-lg-6"><h3>星座守護香水系列</h3><p>為每個星座量身訂做的守護香水，讓您在星空下散發屬於自己的魅力</p><a href="">選購去>></a></div>
-        </div>
-       </div>
+                                        <div class="txt">
+                                            <p>經典粉嫩櫻花香水</p>
+                                            <p>NT $4500</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume2.jpg" alt>
+                                        <div class="txt">
+                                            <p>經典森林玫瑰香水</p>
+                                            <p>NT $3900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume3.jpg" al
+                                            t>
+                                        <div class="txt">
+                                            <p>清新鼠尾草香水</p>
+                                            <p>NT $4900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume4.jpg"
+                                            alt>
+                                        <div class="txt">
+                                            <p>晨曦花語香水</p>
+                                            <p>NT $4200</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume1.jpg" alt>
 
-       <div class="footer">
-        <div class="footer_main">
-          <div class="icons">
-            <img src="../RWD_pic/logo.svg" alt="">
-            <a href="#">
-              <i class="fa-brands fa-line" style="color: #ffffff;"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-            </a>
-          </div>
-          <ul>
-            <h3>隱私權與條款</h3>
-            <li><a href="../html/privacy_terms.html">隱私權政策</a></li>
-            <li><a href="../html/privacy_terms.html">服務條款</a></li>
-          </ul>
-          <ul>
-            <h3>聯絡我們</h3>
-            <li><i class="fa-solid fa-phone" style="color: #ffffff;"></i> 03-425-1108</li>
-            <li><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>sandy87120509@gmail.com</li>
-            <li><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>320桃園市中壢區復興路46號9樓</li>
-          </ul>
+                                        <div class="txt">
+                                            <p>經典粉嫩櫻花香水</p>
+                                            <p>NT $4500</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume2.jpg" alt>
+                                        <div class="txt">
+                                            <p>經典森林玫瑰香水</p>
+                                            <p>NT $3900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume3.jpg" al
+                                            t>
+                                        <div class="txt">
+                                            <p>清新鼠尾草香水</p>
+                                            <p>NT $4900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume4.jpg"
+                                            alt>
+                                        <div class="txt">
+                                            <p>晨曦花語香水</p>
+                                            <p>NT $4200</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Perfume" class="tab-inner">
+                    <!-- tab2的內容 -->
+                    <div class="container">
+                        <div class="row row-cols-4">
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume5.jpg" alt>
+
+                                        <div class="txt">
+                                            <p>經典粉嫩櫻花香水</p>
+                                            <p>NT $4500</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume6.jpg" alt>
+                                        <div class="txt">
+                                            <p>經典森林玫瑰香水</p>
+                                            <p>NT $3900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/ocean-1-small.jpg"
+                                            al
+                                            t>
+                                        <div class="txt">
+                                            <p>清新鼠尾草香水</p>
+                                            <p>NT $4900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/ocean-1 1.jpg"
+                                            alt>
+                                        <div class="txt">
+                                            <p>晨曦花語香水</p>
+                                            <p>NT $4200</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume5.jpg" alt>
+
+                                        <div class="txt">
+                                            <p>經典粉嫩櫻花香水</p>
+                                            <p>NT $4500</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume6.jpg" alt>
+                                        <div class="txt">
+                                            <p>經典森林玫瑰香水</p>
+                                            <p>NT $3900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/ocean-1-small.jpg"
+                                            al
+                                            t>
+                                        <div class="txt">
+                                            <p>清新鼠尾草香水</p>
+                                            <p>NT $4900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/ocean-1 1.jpg"
+                                            alt>
+                                        <div class="txt">
+                                            <p>晨曦花語香水</p>
+                                            <p>NT $4200</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="essence" class="tab-inner">
+                    <!-- tab3的內容 -->
+                    <div class="container">
+                        <div class="row row-cols-4">
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfum-7 1.jpg" alt>
+
+                                        <div class="txt">
+                                            <p>經典粉嫩櫻花香水</p>
+                                            <p>NT $4500</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume-8 1.jpg"
+                                            alt>
+                                        <div class="txt">
+                                            <p>經典森林玫瑰香水</p>
+                                            <p>NT $3900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume-9 1.jpg" al
+                                            t>
+                                        <div class="txt">
+                                            <p>清新鼠尾草香水</p>
+                                            <p>NT $4900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <a href>
+                                        <img src="../RWD_pic/perfume-11.jpg" al
+                                            t>
+                                        <div class="txt">
+                                            <p>清新鼠尾草香水</p>
+                                            <p>NT $4900</p>
+                                        </div>
+                                        <a href>
+                                            <div class="product_link">
+                                                加到購物車
+                                            </div>
+                                        </a>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 第三結束 -->
+                </div>
+            </div>
         </div>
-        <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
-      </div>
-</body>
+
+        <div class="product_last">
+            <div class="row row-cols-1 ">
+                <div class="col-12 col-lg-6"><img
+                        src="../RWD_pic/orgperfume.jpg" alt></div>
+                <div class="col-12 col-lg-6"><h3>古典雅緻香水</h3><p>優雅的花香與清新柑橘的相遇，彷彿身處於古典宮廷的優雅氛圍中</p><a
+                        href>選購去></a></div>
+            </div>
+            <div class="row row-cols-1">
+                <div class="col-12 col-lg-6"><img
+                        src="../RWD_pic/footer-product.jpg" alt></div>
+                <div class="col-12 col-lg-6"><h3>星座守護香水系列</h3><p>為每個星座量身訂做的守護香水，讓您在星空下散發屬於自己的魅力</p><a
+                        href>選購去>></a></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_main">
+                <div class="icons">
+                    <img src="../RWD_pic/logo.svg" alt>
+                    <a href="#">
+                        <i class="fa-brands fa-line" style="color: #ffffff;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-square-facebook"
+                            style="color: #ffffff;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"
+                            style="color: #ffffff;"></i>
+                    </a>
+                </div>
+                <ul>
+                    <h3>隱私權與條款</h3>
+                    <li><a href="../html/privacy_terms.html">隱私權政策</a></li>
+                    <li><a href="../html/privacy_terms.html">服務條款</a></li>
+                </ul>
+                <ul>
+                    <h3>聯絡我們</h3>
+                    <li><i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        03-425-1108</li>
+                    <li><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>sandy87120509@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"
+                            style="color: #ffffff;"></i>320桃園市中壢區復興路46號9樓</li>
+                </ul>
+            </div>
+            <p>本網站為緯育TibaMe第85期前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+        </div>
+    </body>
 </html>
